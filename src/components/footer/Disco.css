@@ -1,0 +1,91 @@
+/* Record */
+.record-center {
+  width: 26px;
+  height: 26px;
+  background: #d4af37;
+  position: absolute;
+  left: 29px;
+  top: 29px;
+  border-radius: 50%;
+  border: solid 5px black;
+}
+
+.record-center::before {
+  content: "";
+  position: absolute;
+  width: 3.125px;
+  height: 3.125px;
+  border-radius: 50%;
+  background: #13151a;
+  top: 6px;
+  left: 6.5px;
+}
+
+.record-ring-1 {
+  width: 47.75px;
+  height: 47.75px;
+  background: transparent;
+  position: absolute;
+  left: 19px;
+  top: 19px;
+  border-radius: 50%;
+  border: solid 1.5px #d4af37;
+  border-top: solid 1.5px #13151a;
+}
+
+.record-ring-2 {
+  width: 61px;
+  height: 61px;
+  background: transparent;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  border-radius: 50%;
+  border: solid 1.5px #d4af37;
+  border-left: solid 1.5px #13151a;
+  border-right: solid 1.5px #13151a;
+}
+
+.record {
+  width: 85px;
+  height: 85px;
+  background: gray;
+  /* left: 11px;
+  top: 20.75px; */
+  border-radius: 50%;
+  border: solid 5px black;
+  filter: blur(0.5px);
+}
+
+.record::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 38px solid #555555;
+  border-right: 38px solid #444444;
+  border-bottom: 38px solid #555555;
+  border-left: 38px solid #444444;
+  border-radius: 50%;
+}
+
+.record-ring-1,
+.record-ring-2,
+.record {
+  animation: record linear 15s infinite;
+}
+
+@keyframes record {
+  from {
+    transform: rotate(0deg);
+  }
+  12% {
+    transform: rotate(0deg);
+  }
+  92% {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

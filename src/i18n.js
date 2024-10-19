@@ -1,34 +1,18 @@
 // src/i18n.js
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import enFooter from './translations/footer/en.json';
+import esFooter from './translations/footer/es.json';
 
 const resources = {
   en: {
     translation: {
-      "modalMessage": "This is a Flowbite React Modal",
-      "openModal": "Open Modal",
-      "close": "Close",
-      "title": "Music Player",
-      "play": "Play",
-      "pause": "Pause",
-      "prev": "Prev",
-      "next": "Next",
-      "unmute": "Unmute",
-      "nowPlaying": "Now playing"
+      footer: enFooter.footer,
     }
   },
   es: {
     translation: {
-      "modalMessage": "Este es un Modal de Flowbite React",
-      "openModal": "Abrir Modal",
-      "close": "Cerrar",
-      "title": "Reproductor de Música",
-      "play": "Reproducir",
-      "pause": "Pausar",
-      "prev": "Anterior",
-      "next": "Siguiente",
-      "unmute": "Activar sonido",
-      "nowPlaying": "Reproduciendo"
+      footer: esFooter.footer,
     }
   }
 };

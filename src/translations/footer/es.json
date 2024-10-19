@@ -1,0 +1,17 @@
+{
+  "footer": {
+    "modalMessage": "Este es un Modal de Flowbite React",
+    "openModal": "Abrir Modal",
+    "close": "Cerrar",
+    "title": "Reproductor de Música",
+    "play": "Reproducir",
+    "pause": "Pausar",
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "unmute": "Activar sonido",
+    "nowPlaying": "Reproduciendo",
+    "english": "Inglés",
+    "spanish": "Español",
+    "languages": "IDIOMA"
+  }
+}

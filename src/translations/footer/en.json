@@ -1,0 +1,17 @@
+{
+  "footer": {
+    "modalMessage": "This is a Flowbite React Modal",
+    "openModal": "Open Modal",
+    "close": "Close",
+    "title": "Music Player",
+    "play": "Play",
+    "pause": "Pause",
+    "prev": "Prev",
+    "next": "Next",
+    "unmute": "Unmute",
+    "nowPlaying": "Now playing",
+    "english": "English",
+    "spanish": "Spanish",
+    "languages": "LANGUAGES"
+  }
+}

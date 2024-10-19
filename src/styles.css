@@ -4,4 +4,15 @@
 @tailwind utilities;
 
 /* Importa los estilos de Flowbite (no Flowbite React) */
-@import 'flowbite';
+/* @import 'flowbite'; */
+.bg-custom-dark {
+  background-color: #13151a;
+}
+
+.bg-custom-gold {
+  background-color: #d4af37;
+}
+
+.white-custom {
+  color: #f8f4e3;
+}

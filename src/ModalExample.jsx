@@ -21,7 +21,7 @@ export default function ModalExample() {
         className="px-4 py-2 bg-blue-600 text-white rounded-lg"
         onClick={openModal}
       >
-        {t("openModal")}
+        {t("footer.openModal")}
       </Button>
 
       <Modal show={isOpen} size="md" popup={true} onClose={closeModal}>
@@ -29,11 +29,11 @@ export default function ModalExample() {
         <Modal.Body>
           <div className="text-center">
             <h3 className="mb-5 text-lg font-normal text-gray-500">
-              {t("modalMessage")}
+              {t("footer.modalMessage")}
             </h3>
             <div className="flex justify-center gap-4">
               <Button color="failure" onClick={closeModal}>
-                {t("close")}
+                {t("footer.close")}
               </Button>
             </div>
           </div>

@@ -80,7 +80,7 @@ export function MusicPlayer() {
 
   return (
     <div className="p-4 bg-gray-100 rounded shadow-lg">
-      <h2 className="text-lg font-bold mb-4">{t("title")}</h2>
+      <h2 className="text-lg font-bold mb-4">{t("footer.title")}</h2>
 
       <audio
         ref={audioRef}
@@ -114,8 +114,8 @@ export function MusicPlayer() {
         >
           Next
         </button>
-        <label className="ml-4 flex items-center space-x-2">
-          <input type="checkbox" checked={!isMuted} onChange={handleMuteToggle} />
+        <label className="ml-4 flex items-center space-x-2 cursor-pointer relative">
+          <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#d4af37] checked:border-[#d4af37]" checked={!isMuted} onChange={handleMuteToggle} />
           <span>Unmute</span>
         </label>
       </div>

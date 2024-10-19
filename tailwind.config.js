@@ -1,14 +1,23 @@
+import flowbite from "flowbite-react/tailwind";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/**/*.{js,jsx,ts,tsx}',
+    './src/**/*.{html,js,jsx,ts,tsx}',
     './public/index.html',
-    './node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}', // Agregar Flowbite
+    flowbite.content(),
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        algo: {
+          100: '#13151a',
+        },
+      },
+    },
   },
+  mode: 'jit', // Just-in-time mode (para asegurar que Tailwind compile todo en desarrollo)
   plugins: [
-    require('flowbite/plugin') // Cargar el plugin de Flowbite
+    flowbite.plugin(),
   ],
 }

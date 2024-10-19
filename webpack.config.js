@@ -13,17 +13,21 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: 'babel-loader',
+        use: "babel-loader"
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: [
+          'style-loader',
+          'css-loader',
+          'postcss-loader',
+        ],
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html', // Asegúrate de que este es tu archivo HTML
+      template: './public/index.html', // Asegúrate de que este es tu archivo HTML
     }),
   ],
   devServer: {
