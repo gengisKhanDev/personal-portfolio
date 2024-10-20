@@ -1,7 +1,7 @@
 import React from "react";
 import { Footer } from "flowbite-react";
 import { BsDribbble, BsFacebook, BsGithub } from "react-icons/bs";
-import { MusicPlayer } from "./MusicPlayer.jsx";
+import { MusicPlayer } from "./music-player/MusicPlayer.jsx";
 import SocialLinks from "./SocialLinks.jsx";
 import LanguageSwitcher from "./LanguageSwitcher.jsx";
 
