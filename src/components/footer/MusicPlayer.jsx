@@ -1,32 +1,25 @@
-// MusicPlayer.jsx
 import React, { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import { Disco } from "./Disco.jsx";
 
 export function MusicPlayer() {
-  // Lista de canciones
   const songs = [
-    "/music/1You're-always-on-my-mind.mp3",
-    "/music/2Muneca-de-loza.mp3",
-    "/music/3I've-Got-You-Under-My-Skin.mp3",
+    { path: "/music/1You're-always-on-my-mind.mp3", title: "You're Always on My Mind" },
+    { path: "/music/2Muneca-de-loza.mp3", title: "Muñeca de Loza" },
+    { path: "/music/3I've-Got-You-Under-My-Skin.mp3", title: "I've Got You Under My Skin" },
   ];
 
   const muteSound = '/music/initSound.mp3'; // Archivo de sonido de 5 segundos para mute
   const unmuteSound = '/music/endSound.mp3'; // Archivo de sonido de 5 segundos para unmute
-  // Estado para controlar la canción actual
+
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
-  // Estado para controlar si el reproductor está en reproducción o en pausa
   const [isPlaying, setIsPlaying] = useState(false);
-  // Estado para controlar si el sonido está activado o no
   const [isMuted, setIsMuted] = useState(true);
 
-  // Referencia al elemento de audio principal (canciones)
   const audioRef = useRef(null);
-  // Referencias a los audios para mute y unmute
   const muteAudioRef = useRef(null);
   const unmuteAudioRef = useRef(null);
 
-
-  // Función para reproducir o pausar la canción
   const togglePlayPause = () => {
     if (isPlaying) {
       audioRef.current.pause();
@@ -76,52 +69,100 @@ export function MusicPlayer() {
     }
   };
 
+  // Modificar la función para manejar el cambio de canción desde la lista
+  const handleSongSelect = (index) => {
+    setCurrentSongIndex(index);
+    if (isPlaying) {
+      setTimeout(() => {
+        audioRef.current.play();  // Si ya está en reproducción, reproduce la nueva canción
+      }, 100);
+    }
+  };
+
   const { t } = useTranslation(); // Hook de traducción
 
   return (
     <div className="p-4 bg-gray-100 rounded shadow-lg">
       <h2 className="text-lg font-bold mb-4">{t("footer.title")}</h2>
 
+      {/* Reproductor de audio */}
       <audio
         ref={audioRef}
-        src={songs[currentSongIndex]}
+        src={songs[currentSongIndex].path}
         muted={isMuted}
         onEnded={nextSong}
       />
-
       <audio ref={muteAudioRef} src={muteSound} />
       <audio ref={unmuteAudioRef} src={unmuteSound} />
 
-      <div className="flex items-center space-x-4">
-        <button
-          onClick={togglePlayPause}
-          className="px-4 py-2 bg-blue-500 text-white rounded"
-          disabled={isMuted}
-        >
-          {isPlaying ? 'Pause' : 'Play'}
-        </button>
-        <button
-          onClick={prevSong}
-          className="px-4 py-2 bg-green-500 text-white rounded"
-          disabled={isMuted}
-        >
-          Prev
-        </button>
-        <button
-          onClick={nextSong}
-          className="px-4 py-2 bg-green-500 text-white rounded"
-          disabled={isMuted}
-        >
-          Next
-        </button>
-        <label className="ml-4 flex items-center space-x-2 cursor-pointer relative">
-          <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#d4af37] checked:border-[#d4af37]" checked={!isMuted} onChange={handleMuteToggle} />
-          <span>Unmute</span>
-        </label>
-      </div>
+      {/* Contenedor de controles y títulos */}
+      <div className="flex justify-between items-center space-x-4">
+        {/* Título de la canción actual */}
+        <div className="flex flex-col items-start">
+          {/* Ícono de nota musical encima de la canción actual */}
+          <img
+            src="/icons/musical-note.svg"
+            alt="icon"
+            className="h-8 mb-2 filter"
+          />
+          <p className="font-bold">{songs[currentSongIndex].title}</p>
+        </div>
 
-      <div className="mt-4">
-        <p>Now playing: {songs[currentSongIndex].split('/').pop()}</p>
+        {/* Controles de reproducción */}
+        <div className="flex flex-col items-center">
+          {/* Componente Disco justo encima de los controles */}
+          <Disco className="mb-4" isPlaying={isPlaying} isMuted={isMuted} />  {/* Pasamos también isMuted */}
+
+          {/* Botones de reproducción */}
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={prevSong}
+              className="px-4 py-2 bg-green-500 text-white rounded"
+              disabled={isMuted}
+            >
+              Prev
+            </button>
+            <button
+              onClick={togglePlayPause}
+              className="px-4 py-2 bg-blue-500 text-white rounded"
+              disabled={isMuted}
+            >
+              {isPlaying ? 'Pause' : 'Play'}
+            </button>
+            <button
+              onClick={nextSong}
+              className="px-4 py-2 bg-green-500 text-white rounded"
+              disabled={isMuted}
+            >
+              Next
+            </button>
+          </div>
+
+          <label className="ml-4 flex items-center space-x-2 cursor-pointer relative">
+            <input
+              type="checkbox"
+              className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#d4af37] checked:border-[#d4af37]"
+              checked={!isMuted}
+              onChange={handleMuteToggle}
+            />
+            <span>Unmute</span> {/* El texto permanece fijo en "Unmute" */}
+          </label>
+        </div>
+
+        {/* Lista de canciones */}
+        <div className="ml-4">
+          <ul>
+            {songs.map((song, index) => (
+              <li
+                key={index}
+                className={`cursor-pointer ${index === currentSongIndex ? 'font-bold text-blue-500' : 'text-gray-700'}`}
+                onClick={() => handleSongSelect(index)}
+              >
+                {song.title}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

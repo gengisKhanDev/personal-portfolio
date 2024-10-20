@@ -1,0 +1,11 @@
+{
+  "sidebards": {
+    "modalMessage": "This is a Flowbite React Modal",
+    "tools": "Herramientas",
+    "database": "Base de datos",
+    "cloud": "Nube",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "languages": "Lenguajes"
+  }
+}

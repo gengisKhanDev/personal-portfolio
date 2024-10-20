@@ -4,7 +4,6 @@ import { BsDribbble, BsFacebook, BsGithub } from "react-icons/bs";
 import { MusicPlayer } from "./MusicPlayer.jsx";
 import SocialLinks from "./SocialLinks.jsx";
 import LanguageSwitcher from "./LanguageSwitcher.jsx";
-import { Disco } from "./Disco.jsx";
 
 export function FooterProyect() {
   // const { language } = useLanguage(); // Obtener el idioma actual
@@ -13,10 +12,13 @@ export function FooterProyect() {
   return (
     <Footer className="bg-[#13151a] border-t-2 border-t-[#d4af37]">
       <div className="w-full">
-        <div className="grid w-full grid-cols-4 gap-0 px-2 py-2 md:grid-cols-4">
+        <div className="grid w-full grid-cols-2 gap-0 px-2 py-2 md:grid-cols-2">
           <LanguageSwitcher />
-          <SocialLinks />
-          <Disco />
+          {/* <SocialLinks />
+          <img
+            src="/icons/musical-note.svg"
+            alt="icon"
+            className="h-8 filter"/> */}
           <MusicPlayer />
           {/* <h1>{t.welcome}</h1> */}
 

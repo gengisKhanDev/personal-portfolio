@@ -50,8 +50,6 @@
   width: 85px;
   height: 85px;
   background: gray;
-  /* left: 11px;
-  top: 20.75px; */
   border-radius: 50%;
   border: solid 5px black;
   filter: blur(0.5px);
@@ -69,21 +67,17 @@
   border-radius: 50%;
 }
 
-.record-ring-1,
-.record-ring-2,
-.record {
-  animation: record linear 15s infinite;
+/* Eliminamos la animación por defecto de .record y rings */
+/* Aplicamos la animación solo cuando se agrega la clase spin */
+.spin .record,
+.spin .record-ring-1,
+.spin .record-ring-2 {
+  animation: record 2s linear infinite;
 }
 
 @keyframes record {
   from {
     transform: rotate(0deg);
-  }
-  12% {
-    transform: rotate(0deg);
-  }
-  92% {
-    transform: rotate(360deg);
   }
   to {
     transform: rotate(360deg);

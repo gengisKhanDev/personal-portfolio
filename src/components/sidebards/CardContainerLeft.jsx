@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card.jsx";
+import { useTranslation } from "react-i18next";
 
 const languajesIcons = [
   { src: "/icons/languajes/javascript.svg", alt: "javascript" },
@@ -46,6 +47,8 @@ const CardContainerLeft = () => {
     setSelectedTitle("Backend");
     setSelectedIcons(backendIcons);
   };
+  
+  const { t } = useTranslation(); // Hook de traducción
 
   return (
     <div className="bg-[#13151a] min-h-screen flex flex-col items-center justify-center">
@@ -55,19 +58,19 @@ const CardContainerLeft = () => {
           onClick={showLanguajes}
           className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-600"
         >
-          Languajes
+          {t("sidebards.languages")}
         </button>
         <button
           onClick={showFrontend}
           className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-600"
         >
-          Frontend
+          {t("sidebards.frontend")}
         </button>
         <button
           onClick={showBackend}
           className="px-4 py-2 bg-green-700 text-white rounded hover:bg-green-600"
         >
-          Backend
+          {t("sidebards.backend")}
         </button>
       </div>
     </div>

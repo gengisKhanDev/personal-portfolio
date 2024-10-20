@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card.jsx";
+import { useTranslation } from "react-i18next";
 
 const cloudIcons = [
   {
@@ -44,6 +45,8 @@ const CardContainerRight = () => {
     setSelectedIcons(toolsIcons);
   };
 
+  const { t } = useTranslation(); // Hook de traducción
+
   return (
     <div className="bg-[#13151a] min-h-screen flex flex-col items-center justify-center">
       <Card title={selectedTitle} icons={selectedIcons} />
@@ -52,19 +55,19 @@ const CardContainerRight = () => {
           onClick={showCloudIcons}
           className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-600"
         >
-          Cloud
+          {t("sidebards.cloud")}
         </button>
         <button
           onClick={showDatabase}
           className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-600"
         >
-          Database
+          {t("sidebards.database")}
         </button>
         <button
           onClick={showTools}
           className="px-4 py-2 bg-green-700 text-white rounded hover:bg-green-600"
         >
-          Tools
+          {t("sidebards.tools")}
         </button>
       </div>
     </div>
