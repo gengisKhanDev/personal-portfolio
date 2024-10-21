@@ -10,7 +10,7 @@ export function FooterProyect() {
   // const t = translations[language]; // Acceder a las traducciones del idioma actual
 
   return (
-    <Footer className="bg-[#13151a] border-t-2 border-t-[#d4af37]">
+    <Footer className="bg-[#13151a] rounded-none border-t-2 border-t-[#d4af37]">
       <div className="w-full">
         <div className="flex w-full gap-2 px-2 py-2">
           <div className="flex-grow">

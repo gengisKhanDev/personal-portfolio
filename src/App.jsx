@@ -39,7 +39,13 @@ function App() {
                 Bienvenidos a mi Portafolio
               </h1>
             </div>
-
+            <div className="w-full mt-4">
+                <img
+                  src="/separadorMejoradoIA.png" // Reemplaza con la ruta de tu separador
+                  alt="Separador Elegante"
+                  className="w-full h-auto"
+                />
+              </div>
             {/* TabbedSection */}
             <TabbedSection />
           </div>

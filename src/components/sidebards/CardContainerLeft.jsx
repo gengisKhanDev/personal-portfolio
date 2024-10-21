@@ -56,19 +56,19 @@ const CardContainerLeft = () => {
       <div className="mt-2 flex flex-col space-y-2">
         <button
           onClick={showLanguajes}
-          className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-600"
+          className="px-4 py-2 text-sm font-medium white-custom bg-transparent border border-[#d4af37] rounded-none hover:bg-[#d4af37] hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
         >
           {t("sidebards.languages")}
         </button>
         <button
           onClick={showFrontend}
-          className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-600"
+          className="px-4 py-2 text-sm font-medium white-custom bg-transparent border border-[#d4af37] rounded-none hover:bg-[#d4af37] hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
         >
           {t("sidebards.frontend")}
         </button>
         <button
           onClick={showBackend}
-          className="px-4 py-2 bg-green-700 text-white rounded hover:bg-green-600"
+          className="px-4 py-2 text-sm font-medium white-custom bg-transparent border border-[#d4af37] rounded-none hover:bg-[#d4af37] hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
         >
           {t("sidebards.backend")}
         </button>
