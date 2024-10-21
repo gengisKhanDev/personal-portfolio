@@ -1,0 +1,12 @@
+{
+  "content": {
+    "project1": {
+      "title": "Proyecto 1",
+      "description": "Este es un proyecto personal simple para crear una página web estática de un negocio de café-bar llamado BCC: Beer & Coffee Company."
+    },
+    "project2": {
+      "title": "Proyecto 2",
+      "description": "Este es un breve descripción del Proyecto 2"
+    }
+  }
+}
