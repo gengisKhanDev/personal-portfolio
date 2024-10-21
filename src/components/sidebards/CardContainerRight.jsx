@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Card from "./Card.jsx";
 import { useTranslation } from "react-i18next";
 
@@ -48,9 +48,9 @@ const CardContainerRight = () => {
   const { t } = useTranslation(); // Hook de traducción
 
   return (
-    <div className="bg-[#13151a] min-h-screen flex flex-col items-center justify-center">
+    <div className="bg-[#13151a] flex flex-col items-center justify-center py-2">
       <Card title={selectedTitle} icons={selectedIcons} />
-      <div className="mt-6 flex flex-col space-y-4">
+      <div className="mt-2 flex flex-col space-y-2">
         <button
           onClick={showCloudIcons}
           className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-600"

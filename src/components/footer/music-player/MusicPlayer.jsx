@@ -2,18 +2,24 @@ import React, { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { AudioControls } from "./AudioControls";
 import { SongList } from "./SongList";
-import { SongInfo } from "./SongInfo";
+import { AudioSettings } from "./AudioSettings.jsx";
 
 export function MusicPlayer() {
   const songs = [
-    { path: "/music/You're-always-on-my-mind.mp3", title: "You're Always on My Mind" },
+    {
+      path: "/music/You're-always-on-my-mind.mp3",
+      title: "You're Always on My Mind",
+    },
     { path: "/music/Muneca-de-loza.mp3", title: "Muñeca de Loza" },
-    { path: "/music/I've-Got-You-Under-My-Skin.mp3", title: "I've Got You Under My Skin" },
-    { path: "/music/Poema", title: "Poema" },
+    {
+      path: "/music/I've-Got-You-Under-My-Skin.mp3",
+      title: "I've Got You Under My Skin",
+    },
+    { path: "/music/Poema.mp3", title: "Poema" },
   ];
 
-  const muteSound = '/music/initSound.mp3'; 
-  const unmuteSound = '/music/endSound.mp3'; 
+  const muteSound = "/music/initSound.mp3";
+  const unmuteSound = "/music/endSound.mp3";
 
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -97,8 +103,7 @@ export function MusicPlayer() {
 
       {/* Contenedor de controles y títulos */}
       <div className="flex justify-between items-center space-x-4">
-        {/* Información de la canción actual */}
-        <SongInfo title={songs[currentSongIndex].title} />
+      <AudioSettings isMuted={isMuted} handleMuteToggle={handleMuteToggle} />
 
         {/* Controles de reproducción */}
         <AudioControls

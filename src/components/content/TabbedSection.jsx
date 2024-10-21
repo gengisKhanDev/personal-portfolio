@@ -8,16 +8,25 @@ import Certificates from "./Certificates";
 
 const TabbedSection = () => {
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-hidden w-full">
       <Tabs aria-label="Full width tabs" variant="fullWidth">
-        <Tabs.Item active title="Projects" icon={HiUserCircle}>
-          <Projects />
+        <Tabs.Item active title="Projects">
+          {/* Sección de Projects con scroll vertical */}
+          <div className="h-[400px] md:h-[500px] overflow-y-auto overflow-x-hidden">
+            <Projects />
+          </div>
         </Tabs.Item>
-        <Tabs.Item title="Experiences" icon={MdDashboard}>
-          <Experience />
+        <Tabs.Item title="Experiences">
+          {/* Sección de Experience con scroll vertical */}
+          <div className="h-[400px] md:h-[500px] overflow-y-auto overflow-x-hidden">
+            <Experience />
+          </div>
         </Tabs.Item>
-        <Tabs.Item title="Certificates" icon={HiAdjustments}>
-          <Certificates />
+        <Tabs.Item title="Education">
+          {/* Sección de Certificates con scroll vertical */}
+          <div className="h-[400px] md:h-[500px] overflow-y-auto overflow-x-hidden">
+            <Certificates />
+          </div>
         </Tabs.Item>
       </Tabs>
     </div>

@@ -12,8 +12,8 @@ export function FooterProyect() {
   return (
     <Footer className="bg-[#13151a] border-t-2 border-t-[#d4af37]">
       <div className="w-full">
-        <div className="flex w-full gap-4 px-2 py-2">
-          <div className="flex-shrink-0">
+        <div className="flex w-full gap-2 px-2 py-2">
+          <div className="flex-grow">
             <LanguageSwitcher />
           </div>
           {/* <SocialLinks />
@@ -21,10 +21,10 @@ export function FooterProyect() {
             src="/icons/musical-note.svg"
             alt="icon"
             className="h-8 filter"/> */}
-          <div className="flex-grow">
+          <div className="flex-shrink-0">
             <MusicPlayer />
           </div>
-          <div className="flex-shrink-0">
+          <div className="flex-grow">
             <SocialLinks />
           </div>
           {/* <h1>{t.welcome}</h1> */}

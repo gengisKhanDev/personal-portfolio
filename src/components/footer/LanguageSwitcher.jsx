@@ -10,7 +10,7 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="p-0 m-0">
+    <div className="p-4 m-0 flex flex-col items-center">
       <h2 className="white-custom p-2">{t("footer.languages")}</h2>
       <div className="inline-flex rounded-md shadow-sm" role="group">
         <button

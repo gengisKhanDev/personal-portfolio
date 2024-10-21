@@ -6,9 +6,9 @@ export default function SocialLinks() {
   const { t } = useTranslation();
 
   return (
-    <div className="p-0 m-0">
-      <h2 className="white-custom p-2">Social Links</h2>
-      <ul className="flex space-x-5">
+    <div className="p-2 m-0 flex flex-col items-center">
+      <h2 className="white-custom p-2 text-center">Social Links</h2>
+      <ul className="flex space-x-5 justify-center">
         <li>
           <a
             href="#"
