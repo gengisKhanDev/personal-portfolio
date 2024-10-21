@@ -16,3 +16,8 @@
 .white-custom {
   color: #f8f4e3;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Para evitar scroll horizontal innecesario */
+}

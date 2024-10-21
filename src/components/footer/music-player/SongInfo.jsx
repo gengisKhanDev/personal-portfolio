@@ -6,9 +6,9 @@ export function SongInfo({ title }) {
       <img
         src="/icons/musical-note.svg"
         alt="icon"
-        className="h-8 mb-2 filter"
+        className="h-8 mb-4 filter"
       />
-      <p className="font-bold">{title}</p>
+      <p className="font-bold white-custom">{title}</p>
     </div>
   );
 }

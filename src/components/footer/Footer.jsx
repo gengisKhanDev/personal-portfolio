@@ -12,14 +12,21 @@ export function FooterProyect() {
   return (
     <Footer className="bg-[#13151a] border-t-2 border-t-[#d4af37]">
       <div className="w-full">
-        <div className="grid w-full grid-cols-2 gap-0 px-2 py-2 md:grid-cols-2">
-          <LanguageSwitcher />
+        <div className="flex w-full gap-4 px-2 py-2">
+          <div className="flex-shrink-0">
+            <LanguageSwitcher />
+          </div>
           {/* <SocialLinks />
           <img
             src="/icons/musical-note.svg"
             alt="icon"
             className="h-8 filter"/> */}
-          <MusicPlayer />
+          <div className="flex-grow">
+            <MusicPlayer />
+          </div>
+          <div className="flex-shrink-0">
+            <SocialLinks />
+          </div>
           {/* <h1>{t.welcome}</h1> */}
 
           {/* <Footer.Title title="Company" />

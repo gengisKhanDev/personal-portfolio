@@ -6,42 +6,44 @@ import CardContainerRight from "./components/sidebards/CardContainerRight";
 
 function App() {
   return (
-    <div className="App bg-[#13151a] min-h-screen relative">
+    <div className="App bg-[#13151a] min-h-screen flex flex-col">
       {/* Columnas laterales, visibles solo en pantallas medianas en adelante */}
       <div className="fixed top-0 left-0 h-full hidden md:block">
-        <img src="/columnMejoradaIA.png" alt="Columna Izquierda" className="h-full" />
+        <img
+          src="/columnMejoradaIA.png"
+          alt="Columna Izquierda"
+          className="h-full"
+        />
       </div>
       <div className="fixed top-0 right-0 h-full hidden md:block">
-        <img src="/columnMejoradaIA.png" alt="Columna Derecha" className="h-full" />
+        <img
+          src="/columnMejoradaIA.png"
+          alt="Columna Derecha"
+          className="h-full"
+        />
       </div>
 
-      {/* Contenido principal con estructura responsive */}
-      <div className="container mx-auto px-4 pt-4 flex flex-col justify-between h-full">
-        <div className="flex-1">
-          {/* Sección de presentación */}
+      {/* Contenido principal */}
+      <div className="container mx-auto px-4 pt-4 flex-1 flex flex-col justify-between h-full">
+        <div className="flex-1 flex flex-col md:flex-row">
+          {/* Habilidades */}
+          <div className="w-full md:w-1/3 p-0 flex items-center justify-center bg-yellow-400">
+            <CardContainerLeft />
+          </div>
 
-          {/* Sección central responsive */}
-          <div className="flex flex-col md:flex-row mt-6">
-            {/* Habilidades */}
-            <div className="w-full md:w-1/3 bg-yellow-400 p-4">
-              <CardContainerLeft />
-            </div>
+          {/* Proyectos */}
+          <div className="w-full md:w-1/3 p-0 mx-0 md:mx-4 mt-4 md:mt-0 flex items-center justify-center bg-blue-500">
+            <TabbedSection />
+          </div>
 
-            {/* Proyectos */}
-            <div className="w-full md:w-1/3 bg-blue-500 p-4 mx-0 md:mx-4 mt-4 md:mt-0">
-              <TabbedSection />
-              {/* <TabbedSection /> */}
-            </div>
-
-            {/* Certificados */}
-            <div className="w-full md:w-1/3 bg-yellow-300 p-4 mt-4 md:mt-0">
-              <CardContainerRight />
-            </div>
+          {/* Certificados */}
+          <div className="w-full md:w-1/3 p-4 mt-4 md:mt-0 flex items-center justify-center bg-yellow-300">
+            {/* <CardContainerRight /> */}
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="bg-pink-500 w-full p-4">
+        {/* Footer siempre visible sin scroll */}
+        <div className="w-full">
           <FooterProyect />
         </div>
       </div>

@@ -6,9 +6,10 @@ import { SongInfo } from "./SongInfo";
 
 export function MusicPlayer() {
   const songs = [
-    { path: "/music/1You're-always-on-my-mind.mp3", title: "You're Always on My Mind" },
-    { path: "/music/2Muneca-de-loza.mp3", title: "Muñeca de Loza" },
-    { path: "/music/3I've-Got-You-Under-My-Skin.mp3", title: "I've Got You Under My Skin" },
+    { path: "/music/You're-always-on-my-mind.mp3", title: "You're Always on My Mind" },
+    { path: "/music/Muneca-de-loza.mp3", title: "Muñeca de Loza" },
+    { path: "/music/I've-Got-You-Under-My-Skin.mp3", title: "I've Got You Under My Skin" },
+    { path: "/music/Poema", title: "Poema" },
   ];
 
   const muteSound = '/music/initSound.mp3'; 
@@ -83,9 +84,7 @@ export function MusicPlayer() {
   const { t } = useTranslation();
 
   return (
-    <div className="p-4 bg-gray-100 rounded shadow-lg">
-      <h2 className="text-lg font-bold mb-4">{t("footer.title")}</h2>
-
+    <div className="p-0 bg-[#13151a] rounded shadow-lg">
       {/* Reproductor de audio */}
       <audio
         ref={audioRef}
