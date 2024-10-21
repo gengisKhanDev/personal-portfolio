@@ -1,70 +1,102 @@
 import React from "react";
-import './Experience.css'; // Tailwind & Flowbite CSS
+import "./Experience.css"; // Mantén el CSS personalizado donde sea necesario
 
 const Experience = () => {
   return (
-    <div class="CV-page">
-      <div class="CV-grid">
-        <div class="CV-grid-column">
-          <div class="CV-jobs">
-            <h2 class="CV-secondaryHeading CV-jobs-heading">
-              Relevant Experience
-            </h2>
-            <section class="CV-timeline CV-job">
-              <h3 class="CV-timeline-heading">
-                <span class="CV-timeline-heading-title">
-                  Creative Technologist Co-op{" "}
+    <div className="CV-page max-w-3xl mx-auto p-6 text-[#f8f4e3] text-base font-sans">
+      <div className="CV-grid flex">
+        <div className="CV-grid-column flex-1">
+          <div className="CV-jobs">
+            <section className="CV-timeline CV-job relative pl-6 border-l border-[#d4af37]">
+              <h3 className="CV-timeline-heading mb-4">
+                <span className="CV-timeline-heading-title text-[#d4af37] italic uppercase">
+                  Lifestar Vital Care
                 </span>
-                &#8211;{" "}
-                <span class="CV-timeline-heading-location">
-                  Mullen Lowe U.S.{" "}
+                &#8211;
+                <span className="CV-timeline-heading-location text-sm">
+                  Edinburg, Texas, U.S. · Remote
                 </span>
-                <small class="CV-timeline-heading-duration">
-                  July 2015 - Present
+                <small className="CV-timeline-heading-duration text-xs text-[#f8f4e3] block">
+                  Jan 2022 - Sep 2024
                 </small>
               </h3>
-              <ul class="CV-timeline-details">
-                <li class="CV-job-timeline-item">
-                  Developed and maintained code for in-house and client websites
-                  utilizing HTML5, CSS3, Javascript, jQuery, PHP, and Wordpress.
+              <ul className="CV-timeline-details list-disc pl-5">
+                <li className="CV-job-timeline-item mb-2">
+                  Added advanced search filters to enhance the usability of
+                  report searches.
                 </li>
-                <li class="CV-job-timeline-item">
-                  Tested front-end code in multiple browsers to ensure
-                  cross-browser compatability.
+                <li className="CV-job-timeline-item mb-2">
+                  Developed modules, such as "protocols," which convert PDF
+                  files to HTML with the help of a microservice built in Java.
                 </li>
-                <li class="CV-job-timeline-item">
-                  Coordinated closely with other developers and digital
-                  producers to expedite projects.
+                <li className="CV-job-timeline-item mb-2">
+                  Built functionality to allow users to view up to four reports
+                  simultaneously.
                 </li>
-                <li class="CV-job-timeline-item">
-                  Clients included Lovesac, U.S. Cellular, JetBlue, and more.
+                <li className="CV-job-timeline-item mb-2">
+                  Implemented functionality for generating PDF reports using
+                  PDF.js to improve report readability.
+                </li>
+                <li className="CV-job-timeline-item mb-2">
+                  Production Deployment: Deployed the system to production
+                  environments using AWS.
+                </li>
+                <li className="CV-job-timeline-item mb-2">
+                  Designed and implemented custom email templates for automated
+                  communications.
+                </li>
+                <li className="CV-job-timeline-item mb-2">
+                  Optimized database tables to improve report loading times and
+                  system performance.
+                </li>
+                <li className="CV-job-timeline-item mb-2">
+                  Updated code dependencies to ensure security and system
+                  efficiency.
+                </li>
+                <li className="CV-job-timeline-item mb-2">
+                  Managed and maintained server infrastructure to guarantee
+                  operational continuity.
+                </li>
+                <li className="CV-job-timeline-item mb-2">
+                  Contributed to the development of a web app in Kotlin,
+                  tailored for mobile devices.
                 </li>
               </ul>
             </section>
-            <section class="CV-timeline CV-job">
-              <h3 class="CV-timeline-heading">
-                <span class="CV-timeline-heading-title">
-                  Research Assistant{" "}
+            <section className="CV-timeline CV-job relative pl-6 border-l border-[#d4af37] mt-4">
+              <h3 className="CV-timeline-heading mb-4">
+                <span className="CV-timeline-heading-title text-[#d4af37] italic uppercase">
+                  Galaxy VR Cafe
                 </span>
-                &#8211;{" "}
-                <span class="CV-timeline-heading-location">
-                  NU College of Computer and Information Science
+                &#8211;
+                <span className="CV-timeline-heading-location text-sm">
+                  Edinburg, Texas, U.S. · Remote
                 </span>
-                <small class="CV-timeline-heading-duration">
-                  March 2015 - April 2015
+                <small className="CV-timeline-heading-duration text-xs text-[#f8f4e3] block">
+                  Jul 2022 - Dec 2023
                 </small>
               </h3>
-              <ul class="CV-timeline-details">
-                <li class="CV-timeline-details-item">
-                  Assisted a PhD student in the dept. of Human Computer
-                  Interaction with the development of a software prototype using
-                  front-end technologies to facilitate better understanding of
-                  parent-child communication preferences and needs in low
-                  socio-economic status families.{" "}
+              <ul className="CV-timeline-details list-disc pl-5">
+                <li className="CV-timeline-details-item mb-2">
+                  User Functionality Development: I implemented a system where
+                  users can customize their profiles and make reservations for
+                  game lounges.
                 </li>
-                <li class="CV-timeline-details-item">
-                  Worked remotely to meet weekly deadlines and project
-                  checkpoints.
+                <li className="CV-timeline-details-item mb-2">
+                  Administration Roles: I developed administrative tools that
+                  allow for management of game listings on the website,
+                  including adding game images and setting up tournaments and
+                  events.
+                </li>
+                <li className="CV-timeline-details-item mb-2">
+                  Web Design and Implementation: I contributed to the final web
+                  design and handled server maintenance and deployment using
+                  AWS.
+                </li>
+                <li className="CV-timeline-details-item mb-2">
+                  Backend Maintenance: Managed the backend using MeteorJS and
+                  MongoDB, ensuring smooth functionality across all user and
+                  admin roles.
                 </li>
               </ul>
             </section>
