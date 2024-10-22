@@ -31,17 +31,17 @@ const CardContainerRight = () => {
   const [selectedIcons, setSelectedIcons] = useState(cloudIcons);
 
   const showCloudIcons = () => {
-    setSelectedTitle("Cloud");
+    setSelectedTitle("sidebards.cloud");
     setSelectedIcons(cloudIcons);
   };
 
   const showDatabase = () => {
-    setSelectedTitle("Database");
+    setSelectedTitle("sidebards.database");
     setSelectedIcons(databaseIcons);
   };
 
   const showTools = () => {
-    setSelectedTitle("Tools");
+    setSelectedTitle("sidebards.tools");
     setSelectedIcons(toolsIcons);
   };
 
@@ -50,25 +50,79 @@ const CardContainerRight = () => {
   return (
     <div className="bg-[#13151a] flex flex-col items-center justify-center py-2">
       <Card title={selectedTitle} icons={selectedIcons} />
-      <div className="mt-2 flex flex-col space-y-2">
-        <button
-          onClick={showCloudIcons}
-          className="px-4 py-2 text-sm font-medium white-custom bg-transparent border border-[#d4af37] rounded-none hover:bg-[#d4af37] hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
-        >
-          {t("sidebards.cloud")}
-        </button>
-        <button
-          onClick={showDatabase}
-          className="px-4 py-2 text-sm font-medium white-custom bg-transparent border border-[#d4af37] rounded-none hover:bg-[#d4af37] hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
-        >
-          {t("sidebards.database")}
-        </button>
-        <button
-          onClick={showTools}
-          className="px-4 py-2 text-sm font-medium white-custom bg-transparent border border-[#d4af37] rounded-none hover:bg-[#d4af37] hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
-        >
-          {t("sidebards.tools")}
-        </button>
+      <div className="mt-2 flex flex-col space-y-2 w-full">
+        <div className="relative w-full">
+          {/* El contenedor para el borde */}
+          <div
+            className="absolute inset-0 z-0"
+            style={{
+              clipPath:
+                "polygon(12% 0, 88% 0, 98% 28%, 98% 72%, 88% 100%, 12% 100%, 2% 72%, 2% 28%)", // Ajuste balanceado
+              backgroundColor: "#d4af37", // Borde rojo
+            }}
+          ></div>
+
+          <button
+            type="button"
+            onClick={showCloudIcons}
+            className="relative z-10 w-full text-black bg-[#f8f4e3] hover:bg-opacity-70 focus:z-10 focus:ring-2 dark:text-white"
+            style={{
+              clipPath:
+                "polygon(13% 4%, 87% 4%, 97% 30%, 97% 70%, 87% 96%, 13% 96%, 3% 70%, 3% 30%)", // Ajuste para el botón
+              padding: "5px 20px",
+            }}
+          >
+            <span className="relative z-10">{t("sidebards.cloud")}</span>
+          </button>
+        </div>
+        <div className="relative w-full">
+          {/* El contenedor para el borde */}
+          <div
+            className="absolute inset-0 z-0"
+            style={{
+              clipPath:
+                "polygon(12% 0, 88% 0, 98% 28%, 98% 72%, 88% 100%, 12% 100%, 2% 72%, 2% 28%)", // Ajuste balanceado
+              backgroundColor: "#d4af37", // Borde rojo
+            }}
+          ></div>
+
+          <button
+            type="button"
+            onClick={showDatabase}
+            className="relative z-10 w-full text-black bg-[#f8f4e3] hover:bg-opacity-70 focus:z-10 focus:ring-2 dark:text-white"
+            style={{
+              clipPath:
+                "polygon(13% 4%, 87% 4%, 97% 30%, 97% 70%, 87% 96%, 13% 96%, 3% 70%, 3% 30%)", // Ajuste para el botón
+              padding: "5px 20px",
+            }}
+          >
+            <span className="relative z-10">{t("sidebards.database")}</span>
+          </button>
+        </div>
+        <div className="relative w-full">
+          {/* El contenedor para el borde */}
+          <div
+            className="absolute inset-0 z-0"
+            style={{
+              clipPath:
+                "polygon(12% 0, 88% 0, 98% 28%, 98% 72%, 88% 100%, 12% 100%, 2% 72%, 2% 28%)", // Ajuste balanceado
+              backgroundColor: "#d4af37", // Borde rojo
+            }}
+          ></div>
+
+          <button
+            type="button"
+            onClick={showTools}
+            className="relative z-10 w-full text-black bg-[#f8f4e3] hover:bg-opacity-70 focus:z-10 focus:ring-2 dark:text-white"
+            style={{
+              clipPath:
+                "polygon(13% 4%, 87% 4%, 97% 30%, 97% 70%, 87% 96%, 13% 96%, 3% 70%, 3% 30%)", // Ajuste para el botón
+              padding: "5px 20px",
+            }}
+          >
+            <span className="relative z-10">{t("sidebards.tools")}</span>
+          </button>
+        </div>
       </div>
     </div>
   );

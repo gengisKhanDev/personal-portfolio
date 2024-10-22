@@ -2,7 +2,7 @@ import React from "react";
 import { Tabs } from "flowbite-react";
 import { Projects } from "./Projects";
 import Experience from "./Experience";
-import Certificates from "./Certificates";
+import Education from "./Education";
 
 const TabbedSection = () => {
   return (
@@ -32,20 +32,20 @@ const TabbedSection = () => {
       >
         <Tabs.Item active title="Projects">
           {/* Sección de Projects con scroll vertical */}
-          <div className="h-[400px] md:h-[500px] overflow-y-auto overflow-x-hidden">
+          <div className="h-[400px] md:h-[400px] overflow-y-auto overflow-x-hidden">
             <Projects />
           </div>
         </Tabs.Item>
         <Tabs.Item title="Experiences">
           {/* Sección de Experience con scroll vertical */}
-          <div className="h-[400px] md:h-[500px] overflow-y-auto overflow-x-hidden">
+          <div className="h-[400px] md:h-[400px] overflow-y-auto overflow-x-hidden">
             <Experience />
           </div>
         </Tabs.Item>
         <Tabs.Item title="Education">
           {/* Sección de Certificates con scroll vertical */}
-          <div className="h-[400px] md:h-[500px] overflow-y-auto overflow-x-hidden">
-            <Certificates />
+          <div className="h-[400px] md:h-[400px] overflow-y-auto overflow-x-hidden">
+            <Education />
           </div>
         </Tabs.Item>
       </Tabs>

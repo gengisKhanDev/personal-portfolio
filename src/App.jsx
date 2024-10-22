@@ -32,14 +32,14 @@ function App() {
           </div>
 
           {/* Contenedor del TabbedSection con el nuevo título */}
-          <div className="w-full md:w-2/3 p-0 mx-0 md:mx-4 mt-4 md:mt-0 flex items-center justify-center flex-col bg-[#13151a]">
+          <div className="w-full md:w-2/3 p-0 flex items-center justify-center flex-col bg-[#13151a]">
             {/* Título "Bienvenidos a mi portafolio" */}
-            <div className="w-full text-center mb-4">
-              <h1 className="text-3xl md:text-4xl font-bold text-[#d4af37]">
+            <div className="w-full text-center">
+              <h1 className="text-3xl md:text-4xl font-bold text-[#d4af37]" style={{ fontFamily: 'monkton-incised-regular' }}>
                 Bienvenidos a mi Portafolio
               </h1>
             </div>
-            <div className="w-full mt-4">
+            <div className="w-full mt-2">
                 <img
                   src="/separadorMejoradoIA.png" // Reemplaza con la ruta de tu separador
                   alt="Separador Elegante"
