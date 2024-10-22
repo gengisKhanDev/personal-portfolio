@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 
 function App() {
   const { t } = useTranslation();
+
   return (
     <div className="App bg-[#13151a] min-h-screen flex flex-col">
       {/* Columnas laterales, visibles solo en pantallas medianas en adelante */}
@@ -28,13 +29,13 @@ function App() {
       {/* Contenido principal */}
       <div className="container mx-auto px-4 pt-4 flex-1 flex flex-col justify-between h-full">
         <div className="flex-1 flex flex-col md:flex-row">
-          {/* Habilidades */}
-          <div className="w-full md:w-1/3 p-0 flex items-center justify-center bg-[#13151a]">
+          {/* Habilidades (CardContainerLeft) */}
+          <div className="w-full md:w-1/3 p-0 order-2 md:order-1 flex items-center justify-center bg-[#13151a]">
             <CardContainerLeft />
           </div>
 
           {/* Contenedor del TabbedSection con el nuevo título */}
-          <div className="w-full md:w-2/3 p-0 flex items-center justify-center flex-col bg-[#13151a]">
+          <div className="w-full md:w-2/3 p-0 order-1 md:order-2 flex items-center justify-center flex-col bg-[#13151a]">
             {/* Título "Bienvenidos a mi portafolio" */}
             <div className="w-full text-center">
               <h1
@@ -51,12 +52,11 @@ function App() {
                 className="w-full h-auto"
               />
             </div>
-            {/* TabbedSection */}
             <TabbedSection />
           </div>
 
-          {/* Certificados */}
-          <div className="w-full md:w-1/3 p-0 flex items-center justify-center bg-[#13151a]">
+          {/* Certificados (CardContainerRight) */}
+          <div className="w-full md:w-1/3 p-0 order-3 flex items-center justify-center bg-[#13151a]">
             <CardContainerRight />
           </div>
         </div>

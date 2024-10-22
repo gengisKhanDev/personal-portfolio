@@ -66,7 +66,7 @@ export function MusicPlayer() {
         audioRef.current.play();
         setIsPlaying(true);
         setIsMuted(false);
-      }, 4000);
+      }, 3000);
     } else {
       muteAudioRef.current.play();
       audioRef.current.pause();
