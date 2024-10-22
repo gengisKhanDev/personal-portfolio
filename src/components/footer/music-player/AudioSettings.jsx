@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 export function AudioSettings({ isMuted, handleMuteToggle }) {
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col items-start">
+    <div className="flex flex-col pr-4 items-start">
       {/* Unmute Checkbox */}
       <label className="flex items-center space-x-2 cursor-pointer relative">
         <input
