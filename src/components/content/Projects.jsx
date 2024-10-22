@@ -9,30 +9,43 @@ export function Projects() {
   const projects = [
     {
       image: "/projects/project1.png",
-      titleKey: "content.project1.title",  // Usamos claves en lugar de strings directas
+      titleKey: "content.project1.title", // Usamos claves en lugar de strings directas
       descriptionKey: "content.project1.description", // Lo mismo aquí
-      githubLink: "https://github.com/your-profile/project-1",
+      githubLink: "https://github.com/gengisKhanDev/laberinto-IA",
       techStack: ["/projects/icons/python.svg"],
     },
     {
       image: "/projects/project2.png",
       titleKey: "content.project2.title",
       descriptionKey: "content.project2.description",
-      githubLink: "https://github.com/your-profile/project-2",
-      techStack: ["/projects/icons/html5.svg", "/projects/icons/css3.svg", "/projects/icons/javascript.svg"],
+      githubLink: "https://github.com/gengisKhanDev/ejercicios-metodos-num",
+      techStack: [
+        "/projects/icons/html5.svg",
+        "/projects/icons/css3.svg",
+        "/projects/icons/javascript.svg",
+      ],
     },
     {
       image: "/projects/project3.png",
       titleKey: "content.project3.title",
       descriptionKey: "content.project3.description",
-      githubLink: "https://github.com/your-profile/project-2",
-      techStack: ["/projects/icons/html5.svg", "/projects/icons/css3.svg", "/projects/icons/javascript.svg"],
-    }
+      githubLink: "https://github.com/gengisKhanDev/beer-coffee-company",
+      techStack: [
+        "/projects/icons/html5.svg",
+        "/projects/icons/css3.svg",
+        "/projects/icons/javascript.svg",
+      ],
+    },
   ];
 
   return (
     <div className="w-full h-80 sm:h-96 md:h-[25rem] lg:h-[25rem] xl:h-[25rem] 2xl:h-[32rem]">
-      <Carousel leftControl="." rightControl="." pauseOnHover className="w-full md:w-[90%] lg:w-[80%] mx-auto">
+      <Carousel
+        leftControl="."
+        rightControl="."
+        pauseOnHover
+        className="w-full md:w-[90%] lg:w-[80%] mx-auto"
+      >
         {projects.map((project, index) => (
           <div className="relative w-full h-full" key={index}>
             {/* Imagen de fondo con opacidad */}
@@ -70,7 +83,7 @@ export function Projects() {
                 className="inline-flex items-center px-4 py-2 bg-gray-800 rounded hover:bg-gray-700"
               >
                 <FaGithub className="mr-2" />
-                {t('viewCode')} {/* Traducir el texto del botón también */}
+                {t("content.viewCode")}
               </a>
             </div>
           </div>

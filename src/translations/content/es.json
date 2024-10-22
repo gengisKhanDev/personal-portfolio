@@ -4,6 +4,7 @@
     "tabProjects": "Proyectos",
     "tabExperience": "Experiencia",
     "tabEducation": "Educación",
+    "viewCode": "Ver Código",
     "project1": {
       "title": "Laberinto IA",
       "description": "Este proyecto implementa tres algoritmos de búsqueda fundamentales: Búsqueda en Profundidad (DFS), Búsqueda en Amplitud (BFS) y Búsqueda de Costo Uniforme (UCS) para ayudar a Pinocho a encontrar a Gepetto en una matriz 5x5. La matriz está poblada con obstáculos como cigarrillos y zorros, los cuales incrementan el costo de la búsqueda."

@@ -33,19 +33,16 @@ const TabbedSection = () => {
         }}
       >
         <Tabs.Item active title={t("content.tabProjects")}>
-          {/* Sección de Projects con scroll vertical */}
           <div className="h-[400px] md:h-[400px] overflow-y-auto overflow-x-hidden">
             <Projects />
           </div>
         </Tabs.Item>
         <Tabs.Item title={t("content.tabExperience")}>
-          {/* Sección de Experience con scroll vertical */}
           <div className="h-[400px] md:h-[400px] overflow-y-auto overflow-x-hidden">
             <Experience />
           </div>
         </Tabs.Item>
         <Tabs.Item title={t("content.tabEducation")}>
-          {/* Sección de Certificates con scroll vertical */}
           <div className="h-[400px] md:h-[400px] overflow-y-auto overflow-x-hidden">
             <Education />
           </div>

@@ -17,14 +17,14 @@ export function AudioSettings({ isMuted, handleMuteToggle }) {
       </label>
 
       {/* Animation Checkbox */}
-      <label className="flex items-center space-x-2 cursor-pointer relative mt-2">
+      {/* <label className="flex items-center space-x-2 cursor-pointer relative mt-2">
         <input
           type="checkbox"
           className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#f8f4e3]"
           // Añadir funcionalidad para el checkbox más tarde si es necesario
         />
         <span className="white-custom">{t("footer.animation")}</span>
-      </label>
+      </label> */}
     </div>
   );
 }

@@ -4,18 +4,19 @@
     "tabProjects": "Projects",
     "tabExperience": "Experience",
     "tabEducation": "Education",
-      "project1": {
-        "title": "AI Labyrinth",
-        "description": "This project implements three fundamental search algorithms: Depth-First Search (DFS), Breadth-First Search (BFS), and Uniform Cost Search (UCS) to help Pinocchio find Geppetto in a 5x5 matrix. The matrix is populated with obstacles such as cigarettes and foxes, which increase the search cost."
-      },
-      "project2": {
-        "title": "Numerical Methods Exercises",
-        "description": "This project was developed as part of the Numerical Methods course at Universidad del Valle. It implements several common numerical methods for solving equations and statistical analysis."
-      },
-      "project3": {
-        "title": "Beer & Coffee Company - Static Web",
-        "description": "This is a simple personal project to create a static website for a coffee bar business called BCC: Beer & Coffee Company. I used the Materialize CSS framework to take advantage of its ease of use in creating components like a carousel."
-      },
+    "viewCode": "View Code",
+    "project1": {
+      "title": "AI Labyrinth",
+      "description": "This project implements three fundamental search algorithms: Depth-First Search (DFS), Breadth-First Search (BFS), and Uniform Cost Search (UCS) to help Pinocchio find Geppetto in a 5x5 matrix. The matrix is populated with obstacles such as cigarettes and foxes, which increase the search cost."
+    },
+    "project2": {
+      "title": "Numerical Methods Exercises",
+      "description": "This project was developed as part of the Numerical Methods course at Universidad del Valle. It implements several common numerical methods for solving equations and statistical analysis."
+    },
+    "project3": {
+      "title": "Beer & Coffee Company - Static Web",
+      "description": "This is a simple personal project to create a static website for a coffee bar business called BCC: Beer & Coffee Company. I used the Materialize CSS framework to take advantage of its ease of use in creating components like a carousel."
+    },
     "experience1": {
       "text1": "Added advanced search filters to enhance the usability of report searches.",
       "text2": "Developed modules, such as (protocols), which convert PDF files to HTML with the help of a microservice built in Java.",
