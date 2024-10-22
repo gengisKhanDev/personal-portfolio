@@ -15,6 +15,25 @@ export default function SocialLinks() {
             className="white-custom hover:text-[#d4af37] dark:hover:text-white dark:text-gray-400"
           >
             <svg
+              className="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fillRule="evenodd"
+                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                clipRule="evenodd"
+              ></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            className="white-custom hover:text-[#d4af37] dark:hover:text-white dark:text-gray-400"
+          >
+            <svg
               className="w-7 h-7"
               fill="currentColor"
               viewBox="0 0 24 24"
@@ -42,25 +61,6 @@ export default function SocialLinks() {
               <path
                 fillRule="evenodd"
                 d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            className="white-custom hover:text-[#d4af37] dark:hover:text-white dark:text-gray-400"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                fillRule="evenodd"
-                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
                 clipRule="evenodd"
               ></path>
             </svg>

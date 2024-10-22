@@ -102,25 +102,33 @@ export function MusicPlayer() {
       <audio ref={unmuteAudioRef} src={unmuteSound} />
 
       {/* Contenedor de controles y títulos */}
-      <div className="flex justify-between items-center space-x-4">
-      <AudioSettings isMuted={isMuted} handleMuteToggle={handleMuteToggle} />
+      <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between items-center">
+        {/* AudioSettings estará arriba en pantallas pequeñas */}
+        <div className="flex-grow">
+          <AudioSettings
+            isMuted={isMuted}
+            handleMuteToggle={handleMuteToggle}
+          />
+        </div>
 
-        {/* Controles de reproducción */}
-        <AudioControls
-          isPlaying={isPlaying}
-          isMuted={isMuted}
-          togglePlayPause={togglePlayPause}
-          nextSong={nextSong}
-          prevSong={prevSong}
-          handleMuteToggle={handleMuteToggle}
-        />
+        {/* Controles de reproducción y lista de canciones en columnas en pantallas pequeñas */}
+        <div className="w-full flex flex-col md:flex-row justify-between items-center">
+          <AudioControls
+            isPlaying={isPlaying}
+            isMuted={isMuted}
+            togglePlayPause={togglePlayPause}
+            nextSong={nextSong}
+            prevSong={prevSong}
+            handleMuteToggle={handleMuteToggle}
+          />
 
-        {/* Lista de canciones */}
-        <SongList
-          songs={songs}
-          currentSongIndex={currentSongIndex}
-          handleSongSelect={handleSongSelect}
-        />
+          {/* Lista de canciones */}
+          <SongList
+            songs={songs}
+            currentSongIndex={currentSongIndex}
+            handleSongSelect={handleSongSelect}
+          />
+        </div>
       </div>
     </div>
   );
