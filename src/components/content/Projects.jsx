@@ -9,7 +9,7 @@ export function Projects() {
   const projects = [
     {
       image: "/projects/project1.png",
-      titleKey: "content.project1.title", // Usamos claves en lugar de strings directas
+      titleKey: "content.project1.title",
       descriptionKey: "content.project1.description", // Lo mismo aquí
       githubLink: "https://github.com/gengisKhanDev/laberinto-IA",
       techStack: ["/projects/icons/python.svg"],
