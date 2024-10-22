@@ -3,8 +3,10 @@ import { FooterProyect } from "./components/footer/Footer";
 import CardContainerLeft from "./components/sidebards/CardContainerLeft";
 import TabbedSection from "./components/content/TabbedSection";
 import CardContainerRight from "./components/sidebards/CardContainerRight";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t } = useTranslation();
   return (
     <div className="App bg-[#13151a] min-h-screen flex flex-col">
       {/* Columnas laterales, visibles solo en pantallas medianas en adelante */}
@@ -35,17 +37,20 @@ function App() {
           <div className="w-full md:w-2/3 p-0 flex items-center justify-center flex-col bg-[#13151a]">
             {/* Título "Bienvenidos a mi portafolio" */}
             <div className="w-full text-center">
-              <h1 className="text-3xl md:text-4xl font-bold text-[#d4af37]" style={{ fontFamily: 'monkton-incised-regular' }}>
-                Bienvenidos a mi Portafolio
+              <h1
+                className="text-3xl md:text-4xl font-bold text-[#d4af37]"
+                style={{ fontFamily: "monkton-incised-regular" }}
+              >
+                {t("content.title")}
               </h1>
             </div>
             <div className="w-full mt-2">
-                <img
-                  src="/separadorMejoradoIA.png" // Reemplaza con la ruta de tu separador
-                  alt="Separador Elegante"
-                  className="w-full h-auto"
-                />
-              </div>
+              <img
+                src="/separadorMejoradoIA.png" // Reemplaza con la ruta de tu separador
+                alt="Separador Elegante"
+                className="w-full h-auto"
+              />
+            </div>
             {/* TabbedSection */}
             <TabbedSection />
           </div>

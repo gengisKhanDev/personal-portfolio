@@ -30,7 +30,7 @@ const backendIcons = [
 ];
 
 const CardContainerLeft = () => {
-  const [selectedTitle, setSelectedTitle] = useState("Languajes");
+  const [selectedTitle, setSelectedTitle] = useState("sidebards.languages");
   const [selectedIcons, setSelectedIcons] = useState(languajesIcons);
 
   const showLanguajes = () => {

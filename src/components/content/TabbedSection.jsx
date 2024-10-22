@@ -3,8 +3,10 @@ import { Tabs } from "flowbite-react";
 import { Projects } from "./Projects";
 import Experience from "./Experience";
 import Education from "./Education";
+import { useTranslation } from "react-i18next";
 
 const TabbedSection = () => {
+  const { t } = useTranslation();
   return (
     <div className="overflow-hidden w-full">
       <Tabs
@@ -30,19 +32,19 @@ const TabbedSection = () => {
           },
         }}
       >
-        <Tabs.Item active title="Projects">
+        <Tabs.Item active title={t("content.tabProjects")}>
           {/* Sección de Projects con scroll vertical */}
           <div className="h-[400px] md:h-[400px] overflow-y-auto overflow-x-hidden">
             <Projects />
           </div>
         </Tabs.Item>
-        <Tabs.Item title="Experiences">
+        <Tabs.Item title={t("content.tabExperience")}>
           {/* Sección de Experience con scroll vertical */}
           <div className="h-[400px] md:h-[400px] overflow-y-auto overflow-x-hidden">
             <Experience />
           </div>
         </Tabs.Item>
-        <Tabs.Item title="Education">
+        <Tabs.Item title={t("content.tabEducation")}>
           {/* Sección de Certificates con scroll vertical */}
           <div className="h-[400px] md:h-[400px] overflow-y-auto overflow-x-hidden">
             <Education />

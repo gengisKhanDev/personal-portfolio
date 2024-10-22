@@ -9,9 +9,11 @@
     "prev": "Prev",
     "next": "Next",
     "unmute": "Unmute",
+    "animation": "Animation",
     "nowPlaying": "Now playing",
     "english": "English",
     "spanish": "Spanish",
-    "languages": "LANGUAGES"
+    "languages": "LANGUAGES",
+    "contact": "Contact"
   }
 }

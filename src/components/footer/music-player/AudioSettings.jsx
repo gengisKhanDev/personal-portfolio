@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export function AudioSettings({ isMuted, handleMuteToggle }) {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col items-start">
       {/* Unmute Checkbox */}
@@ -11,7 +13,7 @@ export function AudioSettings({ isMuted, handleMuteToggle }) {
           checked={!isMuted}
           onChange={handleMuteToggle}
         />
-        <span className="white-custom">Unmute</span>
+        <span className="white-custom">{t("footer.unmute")}</span>
       </label>
 
       {/* Animation Checkbox */}
@@ -21,7 +23,7 @@ export function AudioSettings({ isMuted, handleMuteToggle }) {
           className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#f8f4e3]"
           // Añadir funcionalidad para el checkbox más tarde si es necesario
         />
-        <span className="white-custom">Animation</span>
+        <span className="white-custom">{t("footer.animation")}</span>
       </label>
     </div>
   );

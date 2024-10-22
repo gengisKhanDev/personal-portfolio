@@ -8,19 +8,26 @@ export function Projects() {
 
   const projects = [
     {
-      image: "/projects/capture.png",
+      image: "/projects/project1.png",
       titleKey: "content.project1.title",  // Usamos claves en lugar de strings directas
       descriptionKey: "content.project1.description", // Lo mismo aquí
       githubLink: "https://github.com/your-profile/project-1",
-      techStack: ["/icons/languajes/javascript.svg", "/icons/frontend/react.svg"],
+      techStack: ["/projects/icons/python.svg"],
     },
     {
-      image: "https://flowbite.com/docs/images/carousel/carousel-2.svg",
+      image: "/projects/project2.png",
       titleKey: "content.project2.title",
       descriptionKey: "content.project2.description",
       githubLink: "https://github.com/your-profile/project-2",
-      techStack: ["/icons/languajes/pyton.svg", "/icons/languages/django.svg"],
+      techStack: ["/projects/icons/html5.svg", "/projects/icons/css3.svg", "/projects/icons/javascript.svg"],
     },
+    {
+      image: "/projects/project3.png",
+      titleKey: "content.project3.title",
+      descriptionKey: "content.project3.description",
+      githubLink: "https://github.com/your-profile/project-2",
+      techStack: ["/projects/icons/html5.svg", "/projects/icons/css3.svg", "/projects/icons/javascript.svg"],
+    }
   ];
 
   return (

@@ -27,7 +27,7 @@ const toolsIcons = [
 ];
 
 const CardContainerRight = () => {
-  const [selectedTitle, setSelectedTitle] = useState("Cloud");
+  const [selectedTitle, setSelectedTitle] = useState("sidebards.cloud");
   const [selectedIcons, setSelectedIcons] = useState(cloudIcons);
 
   const showCloudIcons = () => {

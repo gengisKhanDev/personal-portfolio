@@ -1,12 +1,53 @@
 {
   "content": {
-    "project1": {
-      "title": "Project 1",
-      "description": "This is a simple personal project to create a static web page for a coffee-bar business called BCC: Beer & Coffee Company."
+    "title": "WELCOME TO MY PORTFOLIO",
+    "tabProjects": "Projects",
+    "tabExperience": "Experience",
+    "tabEducation": "Education",
+      "project1": {
+        "title": "AI Labyrinth",
+        "description": "This project implements three fundamental search algorithms: Depth-First Search (DFS), Breadth-First Search (BFS), and Uniform Cost Search (UCS) to help Pinocchio find Geppetto in a 5x5 matrix. The matrix is populated with obstacles such as cigarettes and foxes, which increase the search cost."
+      },
+      "project2": {
+        "title": "Numerical Methods Exercises",
+        "description": "This project was developed as part of the Numerical Methods course at Universidad del Valle. It implements several common numerical methods for solving equations and statistical analysis."
+      },
+      "project3": {
+        "title": "Beer & Coffee Company - Static Web",
+        "description": "This is a simple personal project to create a static website for a coffee bar business called BCC: Beer & Coffee Company. I used the Materialize CSS framework to take advantage of its ease of use in creating components like a carousel."
+      },
+    "experience1": {
+      "text1": "Added advanced search filters to enhance the usability of report searches.",
+      "text2": "Developed modules, such as (protocols), which convert PDF files to HTML with the help of a microservice built in Java.",
+      "text3": "Built functionality to allow users to view up to four reports simultaneously.",
+      "text4": "Implemented functionality for generating PDF reports using PDF.js to improve report readability.",
+      "text5": "Production Deployment: Deployed the system to production environments using AWS.",
+      "text6": "Designed and implemented custom email templates for automated communications.",
+      "text7": "Optimized database tables to improve report loading times and system performance.",
+      "text8": "Updated code dependencies to ensure security and system efficiency.",
+      "text9": "Managed and maintained server infrastructure to guarantee operational continuity.",
+      "text10": "Contributed to the development of a web app in Kotlin, tailored for mobile devices."
     },
-    "project2": {
-      "title": "Project 2",
-      "description": "This is a brief description of Project 2"
+    "experience2": {
+      "text1": "I implemented a system where users can customize their profiles and make reservations for game lounges.",
+      "text2": "I developed administrative tools that allow for management of game listings on the website, including adding game images and setting up tournaments and events.",
+      "text3": "I contributed to the final web design and handled server maintenance and deployment using AWS.",
+      "text4": "Managed the backend using MeteorJS and MongoDB, ensuring smooth functionality across all user and admin roles."
+    },
+    "education1": {
+      "title": "Universidad del Valle",
+      "subtitle": "Systems Engineering",
+      "description": "I am a Systems Engineer graduated from Universidad del Valle, one of the most prestigious institutions in the country. During my education, I gained solid knowledge in software development, system architectures, and data analysis. Throughout my career, I learned to apply agile methodologies and work with advanced technologies, which helped me develop technical and problem-solving skills that prepare me to face the challenges of the professional world."
+    },
+    "education2": {
+      "title": "AWS Certified Cloud Practitioner",
+      "subtitle": "Issued by Amazon Web Services Training and Certification",
+      "description": "This AWS certification gave me a strong foundation in cloud services and their applications within the AWS environment. It has enhanced my ability to recognize and work with key AWS services, allowing me to confidently approach AWS-based projects with a better understanding of cloud infrastructure."
+    },
+    "education3": {
+      "title": "DevOps in AWS and project management",
+      "subtitle": "Issued by Coursera",
+      "description": "This certification provided me with a solid understanding of software development, DevOps, and cloud automation. I particularly valued the focus on practical application through case studies and AWS automation. It has equipped me with useful tools for managing projects more efficiently and applying continuous integration and development practices in real-world scenarios."
     }
   }
 }

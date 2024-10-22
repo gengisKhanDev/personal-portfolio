@@ -1,7 +1,9 @@
 import React from "react";
 import "./Experience.css"; // Mantén el CSS personalizado donde sea necesario
+import { useTranslation } from "react-i18next";
 
 const Experience = () => {
+  const { t } = useTranslation();
   return (
     <div className="CV-page max-w-3xl mx-auto p-6 text-[#f8f4e3] text-base font-sans">
       <div className="CV-grid flex">
@@ -22,44 +24,34 @@ const Experience = () => {
               </h3>
               <ul className="CV-timeline-details list-disc pl-5">
                 <li className="CV-job-timeline-item mb-2">
-                  Added advanced search filters to enhance the usability of
-                  report searches.
+                  {t("content.experience1.text1")}
                 </li>
                 <li className="CV-job-timeline-item mb-2">
-                  Developed modules, such as "protocols," which convert PDF
-                  files to HTML with the help of a microservice built in Java.
+                  {t("content.experience1.text2")}
                 </li>
                 <li className="CV-job-timeline-item mb-2">
-                  Built functionality to allow users to view up to four reports
-                  simultaneously.
+                  {t("content.experience1.text3")}
                 </li>
                 <li className="CV-job-timeline-item mb-2">
-                  Implemented functionality for generating PDF reports using
-                  PDF.js to improve report readability.
+                  {t("content.experience1.text4")}
                 </li>
                 <li className="CV-job-timeline-item mb-2">
-                  Production Deployment: Deployed the system to production
-                  environments using AWS.
+                  {t("content.experience1.text5")}
                 </li>
                 <li className="CV-job-timeline-item mb-2">
-                  Designed and implemented custom email templates for automated
-                  communications.
+                  {t("content.experience1.text6")}
                 </li>
                 <li className="CV-job-timeline-item mb-2">
-                  Optimized database tables to improve report loading times and
-                  system performance.
+                  {t("content.experience1.text7")}
                 </li>
                 <li className="CV-job-timeline-item mb-2">
-                  Updated code dependencies to ensure security and system
-                  efficiency.
+                  {t("content.experience1.text8")}
                 </li>
                 <li className="CV-job-timeline-item mb-2">
-                  Managed and maintained server infrastructure to guarantee
-                  operational continuity.
+                  {t("content.experience1.text9")}
                 </li>
                 <li className="CV-job-timeline-item mb-2">
-                  Contributed to the development of a web app in Kotlin,
-                  tailored for mobile devices.
+                  {t("content.experience1.text10")}
                 </li>
               </ul>
             </section>
@@ -78,25 +70,16 @@ const Experience = () => {
               </h3>
               <ul className="CV-timeline-details list-disc pl-5">
                 <li className="CV-timeline-details-item mb-2">
-                  User Functionality Development: I implemented a system where
-                  users can customize their profiles and make reservations for
-                  game lounges.
+                  {t("content.experience2.text1")}
                 </li>
                 <li className="CV-timeline-details-item mb-2">
-                  Administration Roles: I developed administrative tools that
-                  allow for management of game listings on the website,
-                  including adding game images and setting up tournaments and
-                  events.
+                  {t("content.experience2.text2")}
                 </li>
                 <li className="CV-timeline-details-item mb-2">
-                  Web Design and Implementation: I contributed to the final web
-                  design and handled server maintenance and deployment using
-                  AWS.
+                  {t("content.experience2.text3")}
                 </li>
                 <li className="CV-timeline-details-item mb-2">
-                  Backend Maintenance: Managed the backend using MeteorJS and
-                  MongoDB, ensuring smooth functionality across all user and
-                  admin roles.
+                  {t("content.experience2.text4")}
                 </li>
               </ul>
             </section>
