@@ -7,32 +7,33 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/', // Para que las rutas funcionen correctamente
+    publicPath: '/', // Esto asegura que los archivos sean servidos desde la raíz
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: "babel-loader",
+        use: "babel-loader"
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
-      },
-      {
-        test: /\.(png|svg|jpg|gif|woff|woff2|eot|ttf|otf)$/, // Procesa imágenes y fuentes
-        type: 'asset/resource',
+        use: [
+          'style-loader',
+          'css-loader',
+          'postcss-loader',
+        ],
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html', // Usa tu archivo HTML de la carpeta public
+      template: './public/index.html', // Solo una vez
+      filename: 'index.html',         // Asegúrate de que solo haya un `index.html`
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'public', to: 'dist' }, // Copia todos los archivos de 'public' a 'dist'
+        { from: 'public', to: '', globOptions: { ignore: ['**/index.html'] } }, // Ignora el `index.html` aquí para no sobrescribir
       ],
     }),
   ],
