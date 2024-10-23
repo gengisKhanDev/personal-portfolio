@@ -52,11 +52,11 @@ export function Projects() {
             <img
               src={project.image}
               alt={`Project ${index + 1}`}
-              className="absolute inset-0 w-full h-full object-cover opacity-50"
+              className="absolute inset-0 w-full h-full object-cover opacity-60"
             />
 
             {/* Contenido sobre la imagen de fondo */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 text-white bg-gradient-to-t from-black/70 via-black/50 to-transparent">
+            <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 white-custom bg-gradient-to-t from-black/70 via-black/50 to-transparent">
               {/* Nombre del proyecto */}
               <h2 className="text-2xl font-bold">{t(project.titleKey)}</h2>
 

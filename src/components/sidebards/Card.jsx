@@ -6,7 +6,7 @@ const Card = ({ title, icons }) => {
 
   return (
     <div
-      className="block bg-[#13151a] rounded-lg bg-cover shadow-lg"
+      className="block rounded-lg bg-cover shadow-lg"
       style={{
         backgroundImage: "url('/marcos-delgados.png')",
         backgroundSize: "cover", // Asegúrate de que la imagen cubra todo el fondo
@@ -15,7 +15,7 @@ const Card = ({ title, icons }) => {
         width: "192px", // Ajusta el tamaño de la tarjeta a lo que prefieras
       }}
     >
-      <h5 className="mt-20 text-center text-xl font-medium leading-tight text-black">
+      <h5 className="mt-20 text-center text-base font-medium leading-tight text-black">
         {t(title)}
       </h5>
       <div className="px-11 pt-2 grid grid-cols-3 gap-2">

@@ -90,7 +90,7 @@ export function MusicPlayer() {
   const { t } = useTranslation();
 
   return (
-    <div className="p-0 bg-[#13151a] rounded shadow-lg">
+    <div className="p-0 rounded shadow-lg">
       {/* Reproductor de audio */}
       <audio
         ref={audioRef}

@@ -6,7 +6,7 @@ import LanguageSwitcher from "./LanguageSwitcher.jsx";
 
 export function FooterProyect() {
   return (
-    <Footer className="bg-[#13151a] rounded-none border-t-2 border-t-[#d4af37]">
+    <Footer className="bg-transparent rounded-none border-t-2 border-t-[#d4af37]">
       <div className="w-full">
         {/* Cambiamos la disposición de flex-row a flex-col en pantallas pequeñas */}
         <div className="flex flex-col md:flex-row w-full gap-2 px-2 py-2">

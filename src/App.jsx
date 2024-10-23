@@ -10,7 +10,10 @@ function App() {
   const { t } = useTranslation();
 
   return (
-    <div className="App bg-[#13151a] min-h-screen flex flex-col">
+    <div
+      className="App bg-[#13151a] bg-cover bg-center min-h-screen flex flex-col"
+      style={{ backgroundImage: `url(/fondo20.png)` }}
+    >
       {/* Columnas laterales visibles en pantallas medianas en adelante */}
       <div className="fixed top-4 left-4 h-full hidden md:block">
         <img
@@ -31,12 +34,12 @@ function App() {
       <div className="container mx-auto px-4 pt-4 flex-1 flex flex-col justify-between h-full">
         <div className="flex-1 flex flex-col md:flex-row">
           {/* Habilidades (CardContainerLeft), visible solo en pantallas medianas en adelante */}
-          <div className="w-full md:w-1/3 p-0 order-2 md:order-1 hidden md:flex items-center justify-center bg-[#13151a]">
+          <div className="w-full md:w-1/3 p-0 order-2 md:order-1 hidden md:flex items-center justify-center">
             <CardContainerLeft />
           </div>
 
           {/* Contenedor del TabbedSection con el nuevo título */}
-          <div className="w-full md:w-2/3 p-0 order-1 md:order-2 flex items-center justify-center flex-col bg-[#13151a]">
+          <div className="w-full md:w-2/3 p-0 order-1 md:order-2 flex items-center justify-center flex-col">
             {/* Título "Bienvenidos a mi portafolio" */}
             <div className="w-full text-center">
               <h1
@@ -57,7 +60,7 @@ function App() {
           </div>
 
           {/* Certificados (CardContainerRight), visible solo en pantallas medianas en adelante */}
-          <div className="w-full md:w-1/3 p-0 order-3 hidden md:flex items-center justify-center bg-[#13151a]">
+          <div className="w-full md:w-1/3 p-0 order-3 hidden md:flex items-center justify-center">
             <CardContainerRight />
           </div>
         </div>

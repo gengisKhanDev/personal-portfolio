@@ -103,7 +103,7 @@ const CardMobile = () => {
   const [selectedIcons, setSelectedIcons] = useState(languajesIcons);
 
   return (
-    <div className="bg-[#13151a] flex flex-col items-center justify-center py-2">
+    <div className="flex flex-col items-center justify-center py-2">
       <Card title={selectedTitle} icons={selectedIcons} />
 
       <div className="mt-2 flex flex-wrap justify-between w-full">
