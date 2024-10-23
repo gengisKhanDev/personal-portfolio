@@ -44,6 +44,11 @@ export function Projects() {
         leftControl="."
         rightControl="."
         className="w-full md:w-[90%] lg:w-[80%] mx-auto"
+        theme={{
+          indicators: {
+            wrapper: "absolute bottom-1 sm:bottom-5 left-1/2 flex -translate-x-1/2 space-x-3",
+          },
+        }}
       >
         {projects.map((project, index) => (
           <div className="relative w-full h-full" key={index}>
@@ -56,7 +61,9 @@ export function Projects() {
             <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 white-custom bg-gradient-to-t from-black/70 via-black/50 to-transparent">
               <h2 className="text-2xl font-bold">{t(project.titleKey)}</h2>
 
-              <p className="text-sm text-center">{t(project.descriptionKey)}</p>
+              <p className="text-sm text-center">
+                {t(project.descriptionKey)}
+              </p>
 
               <div className="flex space-x-4">
                 {project.techStack.map((tech, i) => (
