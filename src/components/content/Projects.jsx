@@ -10,7 +10,7 @@ export function Projects() {
     {
       image: "/projects/project1.png",
       titleKey: "content.project1.title",
-      descriptionKey: "content.project1.description", // Lo mismo aquí
+      descriptionKey: "content.project1.description",
       githubLink: "https://github.com/gengisKhanDev/laberinto-IA",
       techStack: ["/projects/icons/python.svg"],
     },
@@ -43,27 +43,21 @@ export function Projects() {
       <Carousel
         leftControl="."
         rightControl="."
-        // pauseOnHover
         className="w-full md:w-[90%] lg:w-[80%] mx-auto"
       >
         {projects.map((project, index) => (
           <div className="relative w-full h-full" key={index}>
-            {/* Imagen de fondo con opacidad */}
             <img
               src={project.image}
               alt={`Project ${index + 1}`}
               className="absolute inset-0 w-full h-full object-cover opacity-60"
             />
 
-            {/* Contenido sobre la imagen de fondo */}
             <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 white-custom bg-gradient-to-t from-black/70 via-black/50 to-transparent">
-              {/* Nombre del proyecto */}
               <h2 className="text-2xl font-bold">{t(project.titleKey)}</h2>
 
-              {/* Descripción del proyecto */}
               <p className="text-sm text-center">{t(project.descriptionKey)}</p>
 
-              {/* Iconos de tecnologías usadas */}
               <div className="flex space-x-4">
                 {project.techStack.map((tech, i) => (
                   <img
@@ -75,7 +69,6 @@ export function Projects() {
                 ))}
               </div>
 
-              {/* Botón de GitHub */}
               <a
                 href={project.githubLink}
                 target="_blank"

@@ -7,23 +7,24 @@ const cloudIcons = [
     src: "/icons/devops-cloud/amazonwebservices.svg",
     alt: "amazonwebservices",
   },
-  { src: "/icons/devops-cloud/cloudflare.svg", alt: "cloudflare" },
-  { src: "/icons/devops-cloud/docker.svg", alt: "docker" },
-  { src: "/icons/devops-cloud/gnubash.svg", alt: "gnubash" },
+  { src: "/icons/devops-cloud/cloudflare.svg", alt: "Cloudflare" },
+  { src: "/icons/devops-cloud/docker.svg", alt: "Docker" },
+  { src: "/icons/devops-cloud/gnubash.svg", alt: "GNU Bash" },
 ];
 
 const databaseIcons = [
-  { src: "/icons/database/mongodb.svg", alt: "mongodb" },
-  { src: "/icons/database/postgresql.svg", alt: "postgresql" },
-  { src: "/icons/database/mysql.svg", alt: "mysql" },
+  { src: "/icons/database/mongodb.svg", alt: "MongoDB" },
+  { src: "/icons/database/postgresql.svg", alt: "PostgreSQL" },
+  { src: "/icons/database/mysql.svg", alt: "MySQL" },
 ];
 
 const toolsIcons = [
-  { src: "/icons/tools/git.svg", alt: "git" },
-  { src: "/icons/tools/postman.svg", alt: "postman" },
-  { src: "/icons/tools/figma.svg", alt: "figma" },
-  { src: "/icons/tools/latex.svg", alt: "latex" },
-  { src: "/icons/tools/overleaf.svg", alt: "overleaf" },
+  { src: "/icons/tools/git.svg", alt: "Git" },
+  { src: "/icons/tools/postman.svg", alt: "Postman" },
+  { src: "/icons/tools/figma.svg", alt: "Figma" },
+  { src: "/icons/tools/latex.svg", alt: "LaTeX" },
+  { src: "/icons/tools/overleaf.svg", alt: "Overleaf" },
+  { src: "/icons/tools/wordpress.svg", alt: "WordPress" },
 ];
 
 const buttonConfigs = [

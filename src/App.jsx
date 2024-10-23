@@ -3,7 +3,7 @@ import { FooterProyect } from "./components/footer/Footer";
 import CardContainerLeft from "./components/sidebards/CardContainerLeft";
 import TabbedSection from "./components/content/TabbedSection";
 import CardContainerRight from "./components/sidebards/CardContainerRight";
-import CardMobile from "./components/sidebards/CardMobile"; // Importa tu CardMobile
+import CardMobile from "./components/sidebards/CardMobile";
 import { useTranslation } from "react-i18next";
 
 function App() {
@@ -14,7 +14,6 @@ function App() {
       className="App bg-[#13151a] bg-cover bg-center min-h-screen flex flex-col"
       style={{ backgroundImage: `url(/fondo20.png)` }}
     >
-      {/* Columnas laterales visibles en pantallas medianas en adelante */}
       <div className="fixed top-4 left-4 h-full hidden md:block">
         <img
           src="/columnMejoradaIA.png"
@@ -30,17 +29,13 @@ function App() {
         />
       </div>
 
-      {/* Contenido principal */}
       <div className="container mx-auto px-4 pt-4 flex-1 flex flex-col justify-between h-full">
         <div className="flex-1 flex flex-col md:flex-row">
-          {/* Habilidades (CardContainerLeft), visible solo en pantallas medianas en adelante */}
           <div className="w-full md:w-1/3 p-0 order-2 md:order-1 hidden md:flex items-center justify-center">
             <CardContainerLeft />
           </div>
 
-          {/* Contenedor del TabbedSection con el nuevo título */}
           <div className="w-full md:w-2/3 p-0 order-1 md:order-2 flex items-center justify-center flex-col">
-            {/* Título "Bienvenidos a mi portafolio" */}
             <div className="w-full text-center">
               <h1
                 className="text-3xl md:text-4xl font-bold text-[#d4af37]"
@@ -48,6 +43,7 @@ function App() {
               >
                 {t("content.title")}
               </h1>
+              <h5 className="font-bold text-[#d4af37]" style={{ fontFamily: "monkton-incised-regular" }}>{t("content.subtitle")}</h5>
             </div>
             <div className="w-full mt-2">
               <img
@@ -59,18 +55,15 @@ function App() {
             <TabbedSection />
           </div>
 
-          {/* Certificados (CardContainerRight), visible solo en pantallas medianas en adelante */}
           <div className="w-full md:w-1/3 p-0 order-3 hidden md:flex items-center justify-center">
             <CardContainerRight />
           </div>
         </div>
 
-        {/* CardMobile visible solo en dispositivos móviles */}
         <div className="w-full md:hidden flex justify-center order-2">
           <CardMobile />
         </div>
 
-        {/* Footer siempre visible sin scroll, con el orden correcto en mobile */}
         <div className="w-full order-3">
           <FooterProyect />
         </div>

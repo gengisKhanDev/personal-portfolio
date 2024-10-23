@@ -11,7 +11,6 @@ export function AudioControls({
   return (
     <div className="flex flex-col p-0 m-0">
       <Disco isPlaying={isPlaying} isMuted={isMuted} />{" "}
-      {/* Pasamos también isMuted */}
       <div className="flex pt-2">
         <button
           onClick={prevSong}

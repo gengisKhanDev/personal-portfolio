@@ -1,10 +1,7 @@
-/* src/styles.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Importa los estilos de Flowbite (no Flowbite React) */
-/* @import 'flowbite'; */
 .bg-custom-dark {
   background-color: #13151a;
 }
@@ -19,12 +16,12 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Para evitar scroll horizontal innecesario */
+  overflow-x: hidden;
 }
 
 @font-face {
-  font-family: 'monkton-incised-regular'; /* Nombre que darás a la fuente */
-  src: url('/public/fonts/monkton-incised-regular.otf') format('truetype'); /* Ruta a tu fuente */
-  font-weight: normal; /* Puedes especificar variantes si tienes */
-  font-style: normal; /* Puedes agregar variantes como 'italic', 'bold', etc. */
+  font-family: 'monkton-incised-regular';
+  src: url('/public/fonts/monkton-incised-regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

@@ -6,7 +6,6 @@ const ButtonSidebard = ({ handleClick, title }) => {
 
   return (
     <div className="relative w-full">
-      {/* El contenedor para el borde */}
       <div
         className="absolute inset-0 z-0"
         style={{

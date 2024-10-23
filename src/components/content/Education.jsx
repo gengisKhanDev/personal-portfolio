@@ -6,9 +6,7 @@ const Education = () => {
 
   return (
     <div className="flex flex-col space-y-8 p-4">
-      {/* Primer Bloque de Educación */}
       <div className="flex items-start space-x-4">
-        {/* Logo */}
         <div className="flex-shrink-0">
           <img
             src="/education/Univalle.png"
@@ -17,29 +15,22 @@ const Education = () => {
           />
         </div>
 
-        {/* Textos */}
         <div className="flex flex-col">
-          {/* Título */}
           <h2 className="text-xl md:text-2xl font-bold text-[#d4af37]">
             {t("content.education1.title")}
           </h2>
-          {/* Subtítulo */}
           <h3 className="text-md md:text-lg font-bold white-custom">
             {t("content.education1.subtitle")}
           </h3>
-          {/* Descripción */}
           <p className="text-sm md:text-base white-custom">
             {t("content.education1.description")}
           </p>
         </div>
       </div>
 
-      {/* Barra separadora vertical */}
       <div className="w-full border-l-2 border-[#d4af37] my-4 mx-auto"></div>
 
-      {/* Segundo Bloque de Educación */}
       <div className="flex items-start space-x-4">
-        {/* Logo */}
         <div className="flex-shrink-0">
           <img
             src="/education/aws-certified-cloud-practitioner.png"
@@ -48,13 +39,10 @@ const Education = () => {
           />
         </div>
 
-        {/* Textos */}
         <div className="flex flex-col">
-          {/* Título */}
           <h2 className="text-xl md:text-2xl font-bold text-[#d4af37]">
             {t("content.education2.title")}
           </h2>
-          {/* Subtítulo */}
           <h3 className="text-md md:text-lg font-bold white-custom">
             <a
               target="blank"
@@ -64,19 +52,15 @@ const Education = () => {
               {t("content.education2.subtitle")}
             </a>
           </h3>
-          {/* Descripción */}
           <p className="text-sm md:text-base white-custom">
             {t("content.education2.description")}
           </p>
         </div>
       </div>
 
-      {/* Barra separadora vertical */}
       <div className="w-full border-l-2 border-[#d4af37] my-4 mx-auto"></div>
 
-      {/* Segundo Bloque de Educación */}
       <div className="flex items-start space-x-4">
-        {/* Logo */}
         <div className="flex-shrink-0">
           <img
             src="/education/devops-aws-coursera.png"
@@ -85,13 +69,10 @@ const Education = () => {
           />
         </div>
 
-        {/* Textos */}
         <div className="flex flex-col">
-          {/* Título */}
           <h2 className="text-xl md:text-2xl font-bold text-[#d4af37]">
             {t("content.education3.title")}
           </h2>
-          {/* Subtítulo */}
           <h3 className="text-md md:text-lg font-bold white-custom">
             <a
               target="blank"
@@ -101,14 +82,12 @@ const Education = () => {
               {t("content.education3.subtitle")}
             </a>
           </h3>
-          {/* Descripción */}
           <p className="text-sm md:text-base white-custom">
             {t("content.education3.description")}
           </p>
         </div>
       </div>
 
-      {/* Añade más bloques de educación si es necesario */}
     </div>
   );
 };

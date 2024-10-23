@@ -29,7 +29,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html', // Solo una vez
-      filename: 'index.html',         // Asegúrate de que solo haya un `index.html`
+      filename: 'index.html', // Asegúrate de que solo haya un `index.html`
     }),
     new CopyWebpackPlugin({
       patterns: [

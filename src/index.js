@@ -1,9 +1,8 @@
-// src/index.js o src/App.js
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import './styles.css'; // Tailwind & Flowbite CSS
+import './styles.css';
 import App from './App';
-import './i18n'; // Importa la configuración de i18n
+import './i18n';
 
 const container = document.getElementById('root');
 const root = createRoot(container);

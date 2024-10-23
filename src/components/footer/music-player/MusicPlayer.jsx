@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import { useTranslation } from "react-i18next";
 import { AudioControls } from "./AudioControls";
 import { SongList } from "./SongList";
 import { AudioSettings } from "./AudioSettings.jsx";
@@ -87,11 +86,8 @@ export function MusicPlayer() {
     }
   };
 
-  const { t } = useTranslation();
-
   return (
     <div className="p-0 rounded shadow-lg">
-      {/* Reproductor de audio */}
       <audio
         ref={audioRef}
         src={songs[currentSongIndex].path}
@@ -101,9 +97,7 @@ export function MusicPlayer() {
       <audio ref={muteAudioRef} src={muteSound} />
       <audio ref={unmuteAudioRef} src={unmuteSound} />
 
-      {/* Contenedor de controles y títulos */}
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between items-center">
-        {/* AudioSettings estará arriba en pantallas pequeñas */}
         <div className="flex-grow">
           <AudioSettings
             isMuted={isMuted}
@@ -111,7 +105,6 @@ export function MusicPlayer() {
           />
         </div>
 
-        {/* Controles de reproducción y lista de canciones en columnas en pantallas pequeñas */}
         <div className="w-full flex flex-col md:flex-row justify-between items-center">
           <AudioControls
             isPlaying={isPlaying}
@@ -122,7 +115,6 @@ export function MusicPlayer() {
             handleMuteToggle={handleMuteToggle}
           />
 
-          {/* Lista de canciones */}
           <SongList
             songs={songs}
             currentSongIndex={currentSongIndex}

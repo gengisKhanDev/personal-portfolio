@@ -3,30 +3,30 @@ import Card from "./Card.jsx";
 import ButtonSidebard from "./ButtonSidebard.jsx";
 
 const languajesIcons = [
-  { src: "/icons/languajes/javascript.svg", alt: "javascript" },
-  { src: "/icons/languajes/typescript.svg", alt: "typescript" },
-  { src: "/icons/languajes/kotlin.svg", alt: "kotlin" },
-  { src: "/icons/languajes/java.svg", alt: "java" },
-  { src: "/icons/languajes/pyton.svg", alt: "pyton" },
+  { src: "/icons/languajes/javascript.svg", alt: "JavaScript" },
+  { src: "/icons/languajes/typescript.svg", alt: "TypeScript" },
+  { src: "/icons/languajes/kotlin.svg", alt: "Kotlin" },
+  { src: "/icons/languajes/java.svg", alt: "Java" },
+  { src: "/icons/languajes/pyton.svg", alt: "Python" },
 ];
 
 const frontendIcons = [
-  { src: "/icons/frontend/html5.svg", alt: "html5" },
-  { src: "/icons/frontend/css3.svg", alt: "css3" },
-  { src: "/icons/frontend/backblaze.svg", alt: "backblaze" },
-  { src: "/icons/frontend/react.svg", alt: "react" },
-  { src: "/icons/frontend/astro.svg", alt: "astro" },
-  { src: "/icons/frontend/jquery.svg", alt: "jquery" },
-  { src: "/icons/frontend/tailwindcss.svg", alt: "tailwindcss" },
-  { src: "/icons/frontend/bootstrap.svg", alt: "bootstrap" },
+  { src: "/icons/frontend/html5.svg", alt: "HTML5" },
+  { src: "/icons/frontend/css3.svg", alt: "CSS3" },
+  { src: "/icons/frontend/backblaze.svg", alt: "BlazeJS" },
+  { src: "/icons/frontend/react.svg", alt: "React" },
+  { src: "/icons/frontend/astro.svg", alt: "Astro" },
+  { src: "/icons/frontend/jquery.svg", alt: "JQuery" },
+  { src: "/icons/frontend/tailwindcss.svg", alt: "Tailwind" },
+  { src: "/icons/frontend/bootstrap.svg", alt: "Bootstrap" },
 ];
 
 const backendIcons = [
-  { src: "/icons/backend/node.js.svg", alt: "node.js" },
-  { src: "/icons/backend/meteor.svg", alt: "meteor" },
-  { src: "/icons/backend/express.svg", alt: "express" },
-  { src: "/icons/backend/firebase.svg", alt: "firebase" },
-  { src: "/icons/backend/spring.svg", alt: "spring" },
+  { src: "/icons/backend/node.js.svg", alt: "NodeJS" },
+  { src: "/icons/backend/meteor.svg", alt: "Meteor" },
+  { src: "/icons/backend/express.svg", alt: "Express" },
+  { src: "/icons/backend/firebase.svg", alt: "Firebase" },
+  { src: "/icons/backend/spring.svg", alt: "Spring Boot" },
 ];
 
 const cloudIcons = [
@@ -34,23 +34,24 @@ const cloudIcons = [
     src: "/icons/devops-cloud/amazonwebservices.svg",
     alt: "amazonwebservices",
   },
-  { src: "/icons/devops-cloud/cloudflare.svg", alt: "cloudflare" },
-  { src: "/icons/devops-cloud/docker.svg", alt: "docker" },
-  { src: "/icons/devops-cloud/gnubash.svg", alt: "gnubash" },
+  { src: "/icons/devops-cloud/cloudflare.svg", alt: "Cloudflare" },
+  { src: "/icons/devops-cloud/docker.svg", alt: "Docker" },
+  { src: "/icons/devops-cloud/gnubash.svg", alt: "GNU Bash" },
 ];
 
 const databaseIcons = [
-  { src: "/icons/database/mongodb.svg", alt: "mongodb" },
-  { src: "/icons/database/postgresql.svg", alt: "postgresql" },
-  { src: "/icons/database/mysql.svg", alt: "mysql" },
+  { src: "/icons/database/mongodb.svg", alt: "MongoDB" },
+  { src: "/icons/database/postgresql.svg", alt: "PostgreSQL" },
+  { src: "/icons/database/mysql.svg", alt: "MySQL" },
 ];
 
 const toolsIcons = [
-  { src: "/icons/tools/git.svg", alt: "git" },
-  { src: "/icons/tools/postman.svg", alt: "postman" },
-  { src: "/icons/tools/figma.svg", alt: "figma" },
-  { src: "/icons/tools/latex.svg", alt: "latex" },
-  { src: "/icons/tools/overleaf.svg", alt: "overleaf" },
+  { src: "/icons/tools/git.svg", alt: "Git" },
+  { src: "/icons/tools/postman.svg", alt: "Postman" },
+  { src: "/icons/tools/figma.svg", alt: "Figma" },
+  { src: "/icons/tools/latex.svg", alt: "LaTeX" },
+  { src: "/icons/tools/overleaf.svg", alt: "Overleaf" },
+  { src: "/icons/tools/wordpress.svg", alt: "WordPress" },
 ];
 
 const buttonConfigs = [

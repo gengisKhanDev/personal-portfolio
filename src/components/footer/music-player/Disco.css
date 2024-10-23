@@ -1,4 +1,3 @@
-/* Record */
 .record-center {
   width: 26px;
   height: 26px;
@@ -67,8 +66,6 @@
   border-radius: 50%;
 }
 
-/* Eliminamos la animación por defecto de .record y rings */
-/* Aplicamos la animación solo cuando se agrega la clase spin */
 .spin .record,
 .spin .record-ring-1,
 .spin .record-ring-2 {

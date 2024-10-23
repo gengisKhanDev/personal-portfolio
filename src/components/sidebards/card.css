@@ -1,7 +1,7 @@
 .card-background {
   background-image: url('/marcos-delgados.png');
-  background-size: cover; /* Ajusta el tamaño de la imagen para que cubra el contenedor */
-  background-position: center; /* Centra la imagen de fondo */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  border-radius: 0.5rem; /* Coincide con el borde redondeado de la card */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
 }

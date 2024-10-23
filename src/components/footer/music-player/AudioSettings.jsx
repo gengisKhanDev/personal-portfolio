@@ -15,7 +15,6 @@ export function AudioSettings({ isMuted, handleMuteToggle }) {
 
   return (
     <div className="flex flex-col pr-4 items-start">
-      {/* Unmute Checkbox */}
       <label className="flex items-center space-x-2 cursor-pointer relative">
         <input
           type="checkbox"
@@ -26,7 +25,6 @@ export function AudioSettings({ isMuted, handleMuteToggle }) {
         <span className="white-custom">{t("footer.unmute")}</span>
       </label>
 
-      {/* Animation Checkbox */}
       <label className="flex items-center space-x-2 cursor-pointer relative mt-2">
         <input
           type="checkbox"
@@ -37,7 +35,6 @@ export function AudioSettings({ isMuted, handleMuteToggle }) {
         <span className="white-custom">{t("footer.animation")}</span>
       </label>
 
-      {/* Renderizar las notas musicales si la animación está activada */}
       {isAnimationActive && (
         <div class="muzieknootjes">
           <div class="noot-1">&#9835; &#9833;</div>
