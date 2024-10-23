@@ -43,7 +43,7 @@ export function Projects() {
       <Carousel
         leftControl="."
         rightControl="."
-        pauseOnHover
+        // pauseOnHover
         className="w-full md:w-[90%] lg:w-[80%] mx-auto"
       >
         {projects.map((project, index) => (

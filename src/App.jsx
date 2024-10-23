@@ -3,6 +3,7 @@ import { FooterProyect } from "./components/footer/Footer";
 import CardContainerLeft from "./components/sidebards/CardContainerLeft";
 import TabbedSection from "./components/content/TabbedSection";
 import CardContainerRight from "./components/sidebards/CardContainerRight";
+import CardMobile from "./components/sidebards/CardMobile"; // Importa tu CardMobile
 import { useTranslation } from "react-i18next";
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
 
   return (
     <div className="App bg-[#13151a] min-h-screen flex flex-col">
-      {/* Columnas laterales, visibles solo en pantallas medianas en adelante */}
+      {/* Columnas laterales visibles en pantallas medianas en adelante */}
       <div className="fixed top-4 left-4 h-full hidden md:block">
         <img
           src="/columnMejoradaIA.png"
@@ -29,8 +30,8 @@ function App() {
       {/* Contenido principal */}
       <div className="container mx-auto px-4 pt-4 flex-1 flex flex-col justify-between h-full">
         <div className="flex-1 flex flex-col md:flex-row">
-          {/* Habilidades (CardContainerLeft) */}
-          <div className="w-full md:w-1/3 p-0 order-2 md:order-1 flex items-center justify-center bg-[#13151a]">
+          {/* Habilidades (CardContainerLeft), visible solo en pantallas medianas en adelante */}
+          <div className="w-full md:w-1/3 p-0 order-2 md:order-1 hidden md:flex items-center justify-center bg-[#13151a]">
             <CardContainerLeft />
           </div>
 
@@ -47,7 +48,7 @@ function App() {
             </div>
             <div className="w-full mt-2">
               <img
-                src="/separadorMejoradoIA.png" // Reemplaza con la ruta de tu separador
+                src="/separadorMejoradoIA.png"
                 alt="Separador Elegante"
                 className="w-full h-auto"
               />
@@ -55,14 +56,19 @@ function App() {
             <TabbedSection />
           </div>
 
-          {/* Certificados (CardContainerRight) */}
-          <div className="w-full md:w-1/3 p-0 order-3 flex items-center justify-center bg-[#13151a]">
+          {/* Certificados (CardContainerRight), visible solo en pantallas medianas en adelante */}
+          <div className="w-full md:w-1/3 p-0 order-3 hidden md:flex items-center justify-center bg-[#13151a]">
             <CardContainerRight />
           </div>
         </div>
 
-        {/* Footer siempre visible sin scroll */}
-        <div className="w-full">
+        {/* CardMobile visible solo en dispositivos móviles */}
+        <div className="w-full md:hidden flex justify-center order-2">
+          <CardMobile />
+        </div>
+
+        {/* Footer siempre visible sin scroll, con el orden correcto en mobile */}
+        <div className="w-full order-3">
           <FooterProyect />
         </div>
       </div>

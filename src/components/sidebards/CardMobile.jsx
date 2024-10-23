@@ -29,6 +29,30 @@ const backendIcons = [
   { src: "/icons/backend/spring.svg", alt: "spring" },
 ];
 
+const cloudIcons = [
+  {
+    src: "/icons/devops-cloud/amazonwebservices.svg",
+    alt: "amazonwebservices",
+  },
+  { src: "/icons/devops-cloud/cloudflare.svg", alt: "cloudflare" },
+  { src: "/icons/devops-cloud/docker.svg", alt: "docker" },
+  { src: "/icons/devops-cloud/gnubash.svg", alt: "gnubash" },
+];
+
+const databaseIcons = [
+  { src: "/icons/database/mongodb.svg", alt: "mongodb" },
+  { src: "/icons/database/postgresql.svg", alt: "postgresql" },
+  { src: "/icons/database/mysql.svg", alt: "mysql" },
+];
+
+const toolsIcons = [
+  { src: "/icons/tools/git.svg", alt: "git" },
+  { src: "/icons/tools/postman.svg", alt: "postman" },
+  { src: "/icons/tools/figma.svg", alt: "figma" },
+  { src: "/icons/tools/latex.svg", alt: "latex" },
+  { src: "/icons/tools/overleaf.svg", alt: "overleaf" },
+];
+
 const buttonConfigs = [
   {
     title: "sidebards.languages",
@@ -51,9 +75,30 @@ const buttonConfigs = [
       setSelectedIcons(backendIcons);
     },
   },
+  {
+    title: "sidebards.cloud",
+    handleClick: (setSelectedTitle, setSelectedIcons) => {
+      setSelectedTitle("sidebards.cloud");
+      setSelectedIcons(cloudIcons);
+    },
+  },
+  {
+    title: "sidebards.database",
+    handleClick: (setSelectedTitle, setSelectedIcons) => {
+      setSelectedTitle("sidebards.database");
+      setSelectedIcons(databaseIcons);
+    },
+  },
+  {
+    title: "sidebards.tools",
+    handleClick: (setSelectedTitle, setSelectedIcons) => {
+      setSelectedTitle("sidebards.tools");
+      setSelectedIcons(toolsIcons);
+    },
+  },
 ];
 
-const CardContainerLeft = () => {
+const CardMobile = () => {
   const [selectedTitle, setSelectedTitle] = useState("sidebards.languages");
   const [selectedIcons, setSelectedIcons] = useState(languajesIcons);
 
@@ -61,19 +106,20 @@ const CardContainerLeft = () => {
     <div className="bg-[#13151a] flex flex-col items-center justify-center py-2">
       <Card title={selectedTitle} icons={selectedIcons} />
 
-      <div className="mt-2 flex flex-col space-y-2 w-full">
+      <div className="mt-2 flex flex-wrap justify-between w-full">
         {buttonConfigs.map((config, index) => (
-          <ButtonSidebard
-            key={index}
-            title={config.title}
-            handleClick={() =>
-              config.handleClick(setSelectedTitle, setSelectedIcons)
-            }
-          />
+          <div key={index} className="w-1/2 p-1 flex justify-center">
+            <ButtonSidebard
+              title={config.title}
+              handleClick={() =>
+                config.handleClick(setSelectedTitle, setSelectedIcons)
+              }
+            />
+          </div>
         ))}
       </div>
     </div>
   );
 };
 
-export default CardContainerLeft;
+export default CardMobile;
