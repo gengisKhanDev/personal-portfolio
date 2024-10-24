@@ -17,17 +17,12 @@ export function MusicPlayer() {
     { path: "/music/Poema.mp3", title: "Poema" },
   ];
 
-  const muteSound = "/music/initSound.mp3";
-  const unmuteSound = "/music/endSound.mp3";
-
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false); // Estado inicial en pausa
 
   const audioRef = useRef(null);
-  const muteAudioRef = useRef(null);
-  const unmuteAudioRef = useRef(null);
 
+  // Controla el cambio entre play y pause
   const togglePlayPause = () => {
     if (isPlaying) {
       audioRef.current.pause();
@@ -37,6 +32,7 @@ export function MusicPlayer() {
     setIsPlaying(!isPlaying);
   };
 
+  // Canción siguiente
   const nextSong = () => {
     setCurrentSongIndex((prevIndex) => (prevIndex + 1) % songs.length);
     if (isPlaying) {
@@ -46,6 +42,7 @@ export function MusicPlayer() {
     }
   };
 
+  // Canción anterior
   const prevSong = () => {
     setCurrentSongIndex((prevIndex) =>
       prevIndex === 0 ? songs.length - 1 : prevIndex - 1
@@ -57,26 +54,7 @@ export function MusicPlayer() {
     }
   };
 
-  const handleMuteToggle = () => {
-    if (isMuted) {
-      unmuteAudioRef.current.play();
-      setTimeout(() => {
-        audioRef.current.muted = false;
-        audioRef.current.play();
-        setIsPlaying(true);
-        setIsMuted(false);
-      }, 3000);
-    } else {
-      muteAudioRef.current.play();
-      audioRef.current.pause();
-      setIsPlaying(false);
-      setTimeout(() => {
-        audioRef.current.muted = true;
-        setIsMuted(true);
-      }, 2000);
-    }
-  };
-
+  // Selección manual de una canción
   const handleSongSelect = (index) => {
     setCurrentSongIndex(index);
     if (isPlaying) {
@@ -91,28 +69,19 @@ export function MusicPlayer() {
       <audio
         ref={audioRef}
         src={songs[currentSongIndex].path}
-        muted={isMuted}
         onEnded={nextSong}
       />
-      <audio ref={muteAudioRef} src={muteSound} />
-      <audio ref={unmuteAudioRef} src={unmuteSound} />
 
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between items-center">
         <div className="flex-grow">
-          <AudioSettings
-            isMuted={isMuted}
-            handleMuteToggle={handleMuteToggle}
-          />
+          <AudioSettings />
         </div>
-
         <div className="w-full flex flex-col md:flex-row justify-between items-center">
           <AudioControls
             isPlaying={isPlaying}
-            isMuted={isMuted}
             togglePlayPause={togglePlayPause}
             nextSong={nextSong}
             prevSong={prevSong}
-            handleMuteToggle={handleMuteToggle}
           />
 
           <SongList

@@ -15,16 +15,6 @@ export function AudioSettings({ isMuted, handleMuteToggle }) {
 
   return (
     <div className="flex flex-col pr-4 items-start">
-      <label className="flex items-center space-x-2 cursor-pointer relative">
-        <input
-          type="checkbox"
-          className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#f8f4e3] checked:bg-[#d4af37] checked:border-[#d4af37]"
-          checked={!isMuted}
-          onChange={handleMuteToggle}
-        />
-        <span className="white-custom">{t("footer.unmute")}</span>
-      </label>
-
       <label className="flex items-center space-x-2 cursor-pointer relative mt-2">
         <input
           type="checkbox"
