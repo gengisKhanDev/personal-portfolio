@@ -39,7 +39,7 @@ export function Projects() {
   ];
 
   return (
-    <div className="w-full h-80 sm:h-96 md:h-[25rem] lg:h-[25rem] xl:h-[25rem] 2xl:h-[32rem]">
+    <div className="w-full h-80 sm:h-96 md:h-[25rem] lg:h-[25rem] xl:h-[25rem] 2xl:h-[25rem]">
       <Carousel
         leftControl="."
         rightControl="."

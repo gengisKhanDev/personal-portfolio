@@ -32,7 +32,7 @@ const backendIcons = [
 const cloudIcons = [
   {
     src: "/icons/devops-cloud/amazonwebservices.svg",
-    alt: "amazonwebservices",
+    alt: "Amazon Web Services",
   },
   { src: "/icons/devops-cloud/cloudflare.svg", alt: "Cloudflare" },
   { src: "/icons/devops-cloud/docker.svg", alt: "Docker" },
