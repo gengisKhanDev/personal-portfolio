@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-const ButtonSidebard = ({ handleClick, title }) => {
+const ButtonSidebard = ({ handleClick, title, isActive }) => {
   const { t } = useTranslation();
 
   return (
@@ -18,7 +18,9 @@ const ButtonSidebard = ({ handleClick, title }) => {
       <button
         type="button"
         onClick={handleClick}
-        className="relative z-10 w-full text-black bg-[#f8f4e3] hover:bg-opacity-70 focus:z-10 focus:ring-2 dark:text-white"
+        className={`relative z-10 w-full text-black bg-[#f8f4e3] ${
+          isActive ? "bg-opacity-70" : "hover:bg-opacity-70"
+        } focus:z-10 focus:ring-2 dark:text-white`}
         style={{
           clipPath:
             "polygon(13% 4%, 87% 4%, 97% 30%, 97% 70%, 87% 96%, 13% 96%, 3% 70%, 3% 30%)",

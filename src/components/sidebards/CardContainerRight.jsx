@@ -30,23 +30,26 @@ const toolsIcons = [
 const buttonConfigs = [
   {
     title: "sidebards.cloud",
-    handleClick: (setSelectedTitle, setSelectedIcons) => {
+    handleClick: (setSelectedTitle, setSelectedIcons, setActiveButton) => {
       setSelectedTitle("sidebards.cloud");
       setSelectedIcons(cloudIcons);
+      setActiveButton("sidebards.cloud");
     },
   },
   {
     title: "sidebards.database",
-    handleClick: (setSelectedTitle, setSelectedIcons) => {
+    handleClick: (setSelectedTitle, setSelectedIcons, setActiveButton) => {
       setSelectedTitle("sidebards.database");
       setSelectedIcons(databaseIcons);
+      setActiveButton("sidebards.database");
     },
   },
   {
     title: "sidebards.tools",
-    handleClick: (setSelectedTitle, setSelectedIcons) => {
+    handleClick: (setSelectedTitle, setSelectedIcons, setActiveButton) => {
       setSelectedTitle("sidebards.tools");
       setSelectedIcons(toolsIcons);
+      setActiveButton("sidebards.tools");
     },
   },
 ];
@@ -54,6 +57,7 @@ const buttonConfigs = [
 const CardContainerRight = () => {
   const [selectedTitle, setSelectedTitle] = useState("sidebards.cloud");
   const [selectedIcons, setSelectedIcons] = useState(cloudIcons);
+  const [activeButton, setActiveButton] = useState("sidebards.cloud");
 
   return (
     <div className="flex flex-col items-center justify-center py-2">
@@ -64,8 +68,9 @@ const CardContainerRight = () => {
           <ButtonSidebard
             key={index}
             title={config.title}
+            isActive={activeButton === config.title}
             handleClick={() =>
-              config.handleClick(setSelectedTitle, setSelectedIcons)
+              config.handleClick(setSelectedTitle, setSelectedIcons, setActiveButton)
             }
           />
         ))}

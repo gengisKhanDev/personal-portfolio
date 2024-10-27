@@ -16,14 +16,14 @@ function App() {
     >
       <div className="fixed top-4 left-4 h-full hidden md:block">
         <img
-          src="/columnMejoradaIA.png"
+          src="/columna.png"
           alt="Columna Izquierda"
           className="h-full"
         />
       </div>
       <div className="fixed top-4 right-4 h-full hidden md:block">
         <img
-          src="/columnMejoradaIA.png"
+          src="/columna.png"
           alt="Columna Derecha"
           className="h-full"
         />
@@ -47,7 +47,7 @@ function App() {
             </div>
             <div className="w-full mt-2">
               <img
-                src="/separadorMejoradoIA.png"
+                src="/separador.png"
                 alt="Separador Elegante"
                 className="w-full h-auto"
               />

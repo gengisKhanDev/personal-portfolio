@@ -1,10 +1,11 @@
 {
   "content": {
-    "title": "BIENVENIDOS A MI PORTAFOLIO",
-    "subtitle": "Gengis Hidalgo - Desarrollador de software",
+    "title": "Gengis Hidalgo",
+    "subtitle": "Desarrollador de software",
     "tabProjects": "Proyectos",
     "tabExperience": "Experiencia",
     "tabEducation": "Educación",
+    "tabAbout": "Sobre Mí",
     "viewCode": "Ver Código",
     "project1": {
       "title": "Laberinto IA",
@@ -39,7 +40,7 @@
     "education1": {
       "title": "Universidad del Valle",
       "subtitle": "Ingeniería de Sistemas",
-      "description": "Soy Ingeniero en Sistemas graduado de la Universidad del Valle, una de las instituciones más prestigiosas del país. Durante mi formación, adquirí sólidos conocimientos en desarrollo de software, arquitecturas de sistemas y análisis de datos. A lo largo de mi carrera, aprendí a aplicar metodologías ágiles, así como a trabajar con tecnologías avanzadas, lo que me permitió desarrollar habilidades técnicas y de resolución de problemas que me preparan para enfrentar los retos del mundo profesional."
+      "description": "Durante mi formación, adquirí sólidos conocimientos en desarrollo de software, arquitecturas de sistemas y análisis de datos. A lo largo de mi carrera, aprendí a aplicar metodologías ágiles, así como a trabajar con tecnologías avanzadas, lo que me permitió desarrollar habilidades técnicas y de resolución de problemas que me preparan para enfrentar los retos del mundo profesional."
     },
     "education2": {
       "title": "AWS Certified Cloud Practitioner",
@@ -50,6 +51,8 @@
       "title": "DevOps en AWS y gestión de proyectos",
       "subtitle": "Emitido por Coursera",
       "description": "Esta certificación me proporcionó una sólida comprensión del desarrollo de software, DevOps y la automatización en la nube. Valoro especialmente el enfoque práctico a través de estudios de caso y la automatización con AWS. Me ha brindado herramientas útiles para gestionar proyectos de manera más eficiente y aplicar prácticas de integración y desarrollo continuo en escenarios reales."
-    }
+    },
+    "aboutText1": "Desarrollador web Full Stack con 3 años de experiencia profesional en aplicaciones web, ERP y CRM bajo el modelo IaaS, optimizando la infraestructura en la nube y diseñando sistemas escalables para la gestión eficiente de datos y usuarios. Especializado en optimizar flujos de trabajo y mejorar la productividad empresarial mediante el uso de diversas tecnologías.",
+    "aboutText2": "Especialista en JavaScript y apasionado por DevOps y el desarrollo móvil. Actualmente cursando el último semestre de Ingeniería de Sistemas en la Universidad del Valle."
   }
 }

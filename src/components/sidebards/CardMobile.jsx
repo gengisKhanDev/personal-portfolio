@@ -57,44 +57,50 @@ const toolsIcons = [
 const buttonConfigs = [
   {
     title: "sidebards.languages",
-    handleClick: (setSelectedTitle, setSelectedIcons) => {
+    handleClick: (setSelectedTitle, setSelectedIcons, setActiveButton) => {
       setSelectedTitle("sidebards.languages");
       setSelectedIcons(languajesIcons);
+      setActiveButton("sidebards.languages");
     },
   },
   {
     title: "sidebards.frontend",
-    handleClick: (setSelectedTitle, setSelectedIcons) => {
+    handleClick: (setSelectedTitle, setSelectedIcons, setActiveButton) => {
       setSelectedTitle("sidebards.frontend");
       setSelectedIcons(frontendIcons);
+      setActiveButton("sidebards.frontend");
     },
   },
   {
     title: "sidebards.backend",
-    handleClick: (setSelectedTitle, setSelectedIcons) => {
+    handleClick: (setSelectedTitle, setSelectedIcons, setActiveButton) => {
       setSelectedTitle("sidebards.backend");
       setSelectedIcons(backendIcons);
+      setActiveButton("sidebards.backend");
     },
   },
   {
     title: "sidebards.cloud",
-    handleClick: (setSelectedTitle, setSelectedIcons) => {
+    handleClick: (setSelectedTitle, setSelectedIcons, setActiveButton) => {
       setSelectedTitle("sidebards.cloud");
       setSelectedIcons(cloudIcons);
+      setActiveButton("sidebards.cloud");
     },
   },
   {
     title: "sidebards.database",
-    handleClick: (setSelectedTitle, setSelectedIcons) => {
+    handleClick: (setSelectedTitle, setSelectedIcons, setActiveButton) => {
       setSelectedTitle("sidebards.database");
       setSelectedIcons(databaseIcons);
+      setActiveButton("sidebards.database");
     },
   },
   {
     title: "sidebards.tools",
-    handleClick: (setSelectedTitle, setSelectedIcons) => {
+    handleClick: (setSelectedTitle, setSelectedIcons, setActiveButton) => {
       setSelectedTitle("sidebards.tools");
       setSelectedIcons(toolsIcons);
+      setActiveButton("sidebards.tools");
     },
   },
 ];
@@ -102,6 +108,8 @@ const buttonConfigs = [
 const CardMobile = () => {
   const [selectedTitle, setSelectedTitle] = useState("sidebards.languages");
   const [selectedIcons, setSelectedIcons] = useState(languajesIcons);
+  const [activeButton, setActiveButton] = useState("sidebards.languages");
+
 
   return (
     <div className="flex flex-col items-center justify-center py-2">
@@ -112,8 +120,9 @@ const CardMobile = () => {
           <div key={index} className="w-1/2 p-1 flex justify-center">
             <ButtonSidebard
               title={config.title}
+              isActive={activeButton === config.title}
               handleClick={() =>
-                config.handleClick(setSelectedTitle, setSelectedIcons)
+                config.handleClick(setSelectedTitle, setSelectedIcons, setActiveButton)
               }
             />
           </div>

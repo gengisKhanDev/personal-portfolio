@@ -1,10 +1,11 @@
 {
   "content": {
-    "title": "WELCOME TO MY PORTFOLIO",
-    "subtitle" : "Gengis Hidalgo - software developer",
+    "title": "Gengis Hidalgo",
+    "subtitle": "Software Developer",
     "tabProjects": "Projects",
     "tabExperience": "Experience",
     "tabEducation": "Education",
+    "tabAbout": "About Me",
     "viewCode": "View Code",
     "project1": {
       "title": "AI Labyrinth",
@@ -39,7 +40,7 @@
     "education1": {
       "title": "Universidad del Valle",
       "subtitle": "Systems Engineering",
-      "description": "I am a Systems Engineer graduated from Universidad del Valle, one of the most prestigious institutions in the country. During my education, I gained solid knowledge in software development, system architectures, and data analysis. Throughout my career, I learned to apply agile methodologies and work with advanced technologies, which helped me develop technical and problem-solving skills that prepare me to face the challenges of the professional world."
+      "description": "During my education, I gained solid knowledge in software development, system architectures, and data analysis. Throughout my career, I learned to apply agile methodologies and work with advanced technologies, which helped me develop technical and problem-solving skills that prepare me to face the challenges of the professional world."
     },
     "education2": {
       "title": "AWS Certified Cloud Practitioner",
@@ -50,6 +51,8 @@
       "title": "DevOps in AWS and project management",
       "subtitle": "Issued by Coursera",
       "description": "This certification provided me with a solid understanding of software development, DevOps, and cloud automation. I particularly valued the focus on practical application through case studies and AWS automation. It has equipped me with useful tools for managing projects more efficiently and applying continuous integration and development practices in real-world scenarios."
-    }
+    },
+    "aboutText1": "Full Stack web developer with 3 years of professional experience in web applications, ERP, and CRM under the IaaS model, optimizing cloud infrastructure and designing scalable systems for efficient data and user management. Specialized in optimizing workflows and improving business productivity through the use of various technologies.",
+    "aboutText2": "Specialized in JavaScript and passionate about DevOps and mobile development. Currently in the final year of Systems Engineering at Universidad del Valle."
   }
 }
