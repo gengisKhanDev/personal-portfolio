@@ -6,15 +6,15 @@ import { AudioSettings } from "./AudioSettings.jsx";
 export function MusicPlayer() {
   const songs = [
     {
-      path: "/music/You're-always-on-my-mind.mp3",
-      title: "You're Always on My Mind",
+      path: "/music/epilogue.mp3",
+      title: "Epilogue",
     },
-    { path: "/music/Muneca-de-loza.mp3", title: "Muñeca de Loza" },
+    { path: "/music/great-fairys-fountain.mp3", title: "Great Fairy's Fountain" },
     {
-      path: "/music/I've-Got-You-Under-My-Skin.mp3",
-      title: "I've Got You Under My Skin",
+      path: "/music/merry-go-round-of-life.mp3",
+      title: "Merry Go Round Of Life",
     },
-    { path: "/music/Poema.mp3", title: "Poema" },
+    { path: "/music/pas-de-deux.mp3", title: "Pas De Deux" },
   ];
 
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
