@@ -7,14 +7,14 @@ export function MusicPlayer() {
   const songs = [
     {
       path: "/music/epilogue.mp3",
-      title: "Epilogue",
+      title: "Epilogue - 1:38",
     },
-    { path: "/music/great-fairys-fountain.mp3", title: "Great Fairy's Fountain" },
+    { path: "/music/great-fairys-fountain.mp3", title: "Great Fairy's Fountain - 1:52" },
     {
       path: "/music/merry-go-round-of-life.mp3",
-      title: "Merry Go Round Of Life",
+      title: "Merry Go Round Of Life - 5:15",
     },
-    { path: "/music/pas-de-deux.mp3", title: "Pas De Deux" },
+    { path: "/music/pas-de-deux.mp3", title: "Pas De Deux - 5:55" },
   ];
 
   const [currentSongIndex, setCurrentSongIndex] = useState(0);

@@ -1,58 +1,82 @@
 {
-  "content": {
-    "title": "Gengis Hidalgo",
-    "subtitle": "Desarrollador de software",
-    "tabProjects": "Proyectos",
-    "tabExperience": "Experiencia",
-    "tabEducation": "Educación",
-    "tabAbout": "Sobre Mí",
-    "viewCode": "Ver Código",
-    "project1": {
-      "title": "Laberinto IA",
-      "description": "Este proyecto implementa tres algoritmos de búsqueda fundamentales: Búsqueda en Profundidad (DFS), Búsqueda en Amplitud (BFS) y Búsqueda de Costo Uniforme (UCS) para ayudar a Pinocho a encontrar a Gepetto en una matriz 5x5. La matriz está poblada con obstáculos como cigarrillos y zorros, los cuales incrementan el costo de la búsqueda."
-    },
-    "project2": {
-      "title": "Ejercicios Métodos Numéricos",
-      "description": "Este proyecto fue desarrollado como parte del curso de Métodos Numéricos en la Universidad del Valle. Implementa varios métodos numéricos comunes para la solución de ecuaciones y el análisis estadístico."
-    },
-    "project3": {
-      "title": "Beer & Coffee Company - Web Estática",
-      "description": "Este es un proyecto personal simple para crear una página web estática de un negocio de café-bar llamado BCC: Beer & Coffee Company. En él utilizo el framework Materialize CSS para aprovechar su facilidad de uso en la creación de componentes como el carrusel."
-    },
-    "experience1": {
-      "text1": "Agregué filtros de búsqueda avanzada para mejorar la usabilidad en la búsqueda de informes.",
-      "text2": "Desarrollé módulos, como (protocolos), que convierten archivos PDF a HTML con la ayuda de un microservicio construido en Java.",
-      "text3": "Creé una funcionalidad que permite a los usuarios visualizar hasta cuatro informes simultáneamente.",
-      "text4": "Implementé una funcionalidad para generar informes en PDF utilizando PDF.js para mejorar la legibilidad de los informes.",
-      "text5": "Despliegue en Producción: Implementé el sistema en entornos de producción utilizando AWS.",
-      "text6": "Diseñé e implementé plantillas de correo electrónico personalizadas para comunicaciones automatizadas.",
-      "text7": "Optimicé las tablas de la base de datos para mejorar los tiempos de carga de informes y el rendimiento del sistema.",
-      "text8": "Actualicé las dependencias de código para garantizar la seguridad y eficiencia del sistema.",
-      "text9": "Gestioné y mantuve la infraestructura del servidor para garantizar la continuidad operativa.",
-      "text10": "Contribuí al desarrollo de una aplicación web en Kotlin, diseñada específicamente para dispositivos móviles."
-    },
-    "experience2": {
-      "text1": "Implementé un sistema donde los usuarios pueden personalizar sus perfiles y hacer reservaciones para salas de juegos.",
-      "text2": "Desarrollé herramientas administrativas que permiten gestionar las listas de juegos en el sitio web, incluyendo la adición de imágenes de juegos y la configuración de torneos y eventos.",
-      "text3": "Contribuí al diseño final del sitio web y me encargué del mantenimiento del servidor y el despliegue utilizando AWS.",
-      "text4": "Administré el backend utilizando MeteorJS y MongoDB, garantizando un funcionamiento fluido para todos los roles de usuarios y administradores."
-    },
-    "education1": {
-      "title": "Universidad del Valle",
-      "subtitle": "Ingeniería de Sistemas",
-      "description": "Durante mi formación, adquirí sólidos conocimientos en desarrollo de software, arquitecturas de sistemas y análisis de datos. A lo largo de mi carrera, aprendí a aplicar metodologías ágiles, así como a trabajar con tecnologías avanzadas, lo que me permitió desarrollar habilidades técnicas y de resolución de problemas que me preparan para enfrentar los retos del mundo profesional."
-    },
-    "education2": {
-      "title": "AWS Certified Cloud Practitioner",
-      "subtitle": "Emitido por Amazon Web Services Training and Certification",
-      "description": "Esta certificación de AWS me proporcionó una base sólida en servicios en la nube y sus aplicaciones dentro del entorno de AWS. Ha mejorado mi capacidad para identificar y trabajar con los servicios clave de AWS, permitiéndome abordar proyectos basados en AWS con mayor confianza y comprensión de la infraestructura en la nube."
-    },
-    "education3": {
-      "title": "DevOps en AWS y gestión de proyectos",
-      "subtitle": "Emitido por Coursera",
-      "description": "Esta certificación me proporcionó una sólida comprensión del desarrollo de software, DevOps y la automatización en la nube. Valoro especialmente el enfoque práctico a través de estudios de caso y la automatización con AWS. Me ha brindado herramientas útiles para gestionar proyectos de manera más eficiente y aplicar prácticas de integración y desarrollo continuo en escenarios reales."
-    },
-    "aboutText1": "Desarrollador web Full Stack con 3 años de experiencia profesional en aplicaciones web, ERP y CRM bajo el modelo IaaS, optimizando la infraestructura en la nube y diseñando sistemas escalables para la gestión eficiente de datos y usuarios. Especializado en optimizar flujos de trabajo y mejorar la productividad empresarial mediante el uso de diversas tecnologías.",
-    "aboutText2": "Ingeniero en Sistemas de la Universidad del Valle. Especialista en JavaScript y apasionado por DevOps y el desarrollo móvil, siempre en búsqueda de nuevas oportunidades para innovar y crecer profesionalmente."
-  }
+	"content": {
+		"title": "Gengis Hidalgo",
+		"subtitle": "Ingeniero de Sistemas",
+		"tabProjects": "Proyectos",
+		"tabExperience": "Experiencia",
+		"tabEducation": "Educación",
+		"tabAbout": "Sobre Mí",
+		"viewCode": "Ver Código",
+		"project1": {
+			"title": "Laberinto IA",
+			"description": "Este proyecto implementa tres algoritmos de búsqueda fundamentales: Búsqueda en Profundidad (DFS), Búsqueda en Amplitud (BFS) y Búsqueda de Costo Uniforme (UCS) para ayudar a Pinocho a encontrar a Gepetto en una matriz 5x5. La matriz está poblada con obstáculos como cigarrillos y zorros, los cuales incrementan el costo de la búsqueda."
+		},
+		"project2": {
+			"title": "Ejercicios Métodos Numéricos",
+			"description": "Este proyecto fue desarrollado como parte del curso de Métodos Numéricos en la Universidad del Valle. Implementa varios métodos numéricos comunes para la solución de ecuaciones y el análisis estadístico."
+		},
+		"project3": {
+			"title": "Beer & Coffee Company - Web Estática",
+			"description": "Este es un proyecto personal simple para crear una página web estática de un negocio de café-bar llamado BCC: Beer & Coffee Company. En él utilizo el framework Materialize CSS para aprovechar su facilidad de uso en la creación de componentes como el carrusel."
+		},
+		"experience0": {
+			"text1": "Desarrollo de interfaces y optimizaciones front-end.",
+			"text2": "Geneuse:  IA para optimizar cruces de caballos pura sangre y multiplicar las probabilidades de éxito, con micropagos y subscripciones usando Stripe. Encargado de realizar vistas para clientes y administradores, reportes y gestión de correos. Proyecto internacional, (Noruega y Australia).",
+			"text3": "MentorHispano: Plataforma educativa con aprendizaje personalizado y analítica en tiempo real con ayuda de un chatbot que acompaña en aprendizaje. Encargado de mejoras de rendimiento y optimizaciones para una plataforma educativa, reduciendo el tiempo de carga en un 60%. Proyecto internacional, (Venezuela).",
+			"text4": "Red Circular Araucanía: Dashboard georreferenciado de flujos y residuos de construcción para apoyar decisiones en economía circular. Encargado de ajustes en cálculos de materiales, alertas y modales en dashboard georreferenciado. Proyecto internacional, (Chile).",
+			"text5": "Plataforma Nutricional Matty: Sistema modular para gestión de planes nutricionales y seguimiento de hábitos de salud y entranamiento. Encargado de maquetación inicial e integración usando Vercel V0. Proyecto internacional, (España)."
+		},
+		"experience1": {
+			"text1": "Agregué filtros de búsqueda avanzada para mejorar la usabilidad en la búsqueda de informes.",
+			"text2": "Desarrollé módulos, como (protocolos), que convierten archivos PDF a HTML con la ayuda de un microservicio construido en Java.",
+			"text3": "Creé una funcionalidad que permite a los usuarios visualizar hasta cuatro informes simultáneamente.",
+			"text4": "Implementé una funcionalidad para generar informes en PDF utilizando PDF.js para mejorar la legibilidad de los informes.",
+			"text5": "Despliegue en Producción: Implementé el sistema en entornos de producción utilizando AWS.",
+			"text6": "Diseñé e implementé plantillas de correo electrónico personalizadas para comunicaciones automatizadas.",
+			"text7": "Optimicé las tablas de la base de datos para mejorar los tiempos de carga de informes y el rendimiento del sistema.",
+			"text8": "Actualicé las dependencias de código para garantizar la seguridad y eficiencia del sistema.",
+			"text9": "Gestioné y mantuve la infraestructura del servidor para garantizar la continuidad operativa.",
+			"text10": "Contribuí al desarrollo de una aplicación web en Kotlin, diseñada específicamente para dispositivos móviles."
+		},
+		"experience2": {
+			"text1": "Implementé un sistema donde los usuarios pueden personalizar sus perfiles y hacer reservaciones para salas de juegos.",
+			"text2": "Desarrollé herramientas administrativas que permiten gestionar las listas de juegos en el sitio web, incluyendo la adición de imágenes de juegos y la configuración de torneos y eventos.",
+			"text3": "Contribuí al diseño final del sitio web y me encargué del mantenimiento del servidor y el despliegue utilizando AWS.",
+			"text4": "Administré el backend utilizando MeteorJS y MongoDB, garantizando un funcionamiento fluido para todos los roles de usuarios y administradores."
+		},
+		"experience3": {
+			"text1": "Añadí páginas y nuevas funcionalidades usando plugins personalizados y de terceros (secciones de la página de inicio, gestión de cupones, calendario de eventos).",
+			"text2": "Gestioné la actualización de dependencias para garantizar la seguridad y el rendimiento de la plataforma.",
+			"text3": "Desplegué actualizaciones del sitio en AWS EC2 y desarrollé scripts automatizados para respaldos tanto del sistema de archivos como de la base de datos MySQL.",
+			"text4": "Configuré plugins de cupones y eventos para optimizar campañas promocionales y mejorar la interacción de los usuarios."
+		},
+		"experience4": {
+			"text1": "Diseñé e implementé visualmente las distintas secciones de la plataforma (páginas de categorías, fichas de lugares, mapas interactivos) usando plantillas y maquetación personalizada.",
+			"text2": "Integré y configuré plugins de directorio, mapas y filtros para mostrar puntos de interés y rutas turísticas.",
+			"text3": "Actualicé dependencias y temas para garantizar compatibilidad y mejoras de seguridad.",
+			"text4": "Desplegué actualizaciones en AWS EC2 y mantuve scripts de respaldo automatizados para archivos y base de datos MySQL."
+		},
+		"experience5": {
+			"text1": "Sitio oficial de Edinburg",
+			"text2": "Desarrollador WordPress (por proyectos / intermitente) 2021 - 2024",
+			"text3": "Explora Edinburg ETX"
+		},
+		"education1": {
+			"title": "Universidad del Valle",
+			"subtitle": "Ingeniería de Sistemas",
+			"description": "Durante mi formación, adquirí diversos conocimientos y habilidades en desarrollo de software, arquitecturas de sistemas y análisis de datos. A lo largo de mi carrera, aprendí a aplicar metodologías ágiles, así como a trabajar con tecnologías avanzadas, lo que me permitió desarrollar habilidades técnicas y de resolución de problemas que me preparan para enfrentar los retos del mundo profesional."
+		},
+		"education2": {
+			"title": "AWS Certified Cloud Practitioner",
+			"subtitle": "Emitido por Amazon Web Services Training and Certification",
+			"description": "Esta certificación de AWS me proporcionó una base sólida en servicios en la nube y sus aplicaciones dentro del entorno de AWS. Ha mejorado mi capacidad para identificar y trabajar con los servicios clave de AWS, permitiéndome abordar proyectos basados en AWS con mayor confianza y comprensión de la infraestructura en la nube."
+		},
+		"education3": {
+			"title": "DevOps en AWS y gestión de proyectos",
+			"subtitle": "Emitido por Coursera",
+			"description": "Esta certificación me proporcionó una sólida comprensión del desarrollo de software, DevOps y la automatización en la nube. Valoro especialmente el enfoque práctico a través de estudios de caso y la automatización con AWS. Me ha brindado herramientas útiles para gestionar proyectos de manera más eficiente y aplicar prácticas de integración y desarrollo continuo en escenarios reales."
+		},
+		"aboutText1": "Ingeniero en Sistemas de la Universidad del Valle. Desarrollador web Full Stack con 4 años de experiencia en aplicaciones web, ERP y CRM bajo el modelo IaaS, optimizando la infraestructura en la nube y diseñando sistemas escalables para la gestión eficiente de datos y usuarios. Especializado en optimizar flujos de trabajo y mejorar la productividad empresarial mediante el uso de diversas tecnologías.",
+		"aboutText2": "Especialista en TypeScript y apasionado por DevOps, desarrollo móvil y soluciones en inteligencia artificial, siempre en búsqueda de nuevas oportunidades para innovar y crecer profesionalmente."
+	}
 }

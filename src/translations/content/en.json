@@ -1,58 +1,82 @@
 {
-  "content": {
-    "title": "Gengis Hidalgo",
-    "subtitle": "Software Developer",
-    "tabProjects": "Projects",
-    "tabExperience": "Experience",
-    "tabEducation": "Education",
-    "tabAbout": "About Me",
-    "viewCode": "View Code",
-    "project1": {
-      "title": "AI Labyrinth",
-      "description": "This project implements three fundamental search algorithms: Depth-First Search (DFS), Breadth-First Search (BFS), and Uniform Cost Search (UCS) to help Pinocchio find Geppetto in a 5x5 matrix. The matrix is populated with obstacles such as cigarettes and foxes, which increase the search cost."
-    },
-    "project2": {
-      "title": "Numerical Methods Exercises",
-      "description": "This project was developed as part of the Numerical Methods course at Universidad del Valle. It implements several common numerical methods for solving equations and statistical analysis."
-    },
-    "project3": {
-      "title": "Beer & Coffee Company - Static Web",
-      "description": "This is a simple personal project to create a static website for a coffee bar business called BCC: Beer & Coffee Company. I used the Materialize CSS framework to take advantage of its ease of use in creating components like a carousel."
-    },
-    "experience1": {
-      "text1": "Added advanced search filters to enhance the usability of report searches.",
-      "text2": "Developed modules, such as (protocols), which convert PDF files to HTML with the help of a microservice built in Java.",
-      "text3": "Built functionality to allow users to view up to four reports simultaneously.",
-      "text4": "Implemented functionality for generating PDF reports using PDF.js to improve report readability.",
-      "text5": "Production Deployment: Deployed the system to production environments using AWS.",
-      "text6": "Designed and implemented custom email templates for automated communications.",
-      "text7": "Optimized database tables to improve report loading times and system performance.",
-      "text8": "Updated code dependencies to ensure security and system efficiency.",
-      "text9": "Managed and maintained server infrastructure to guarantee operational continuity.",
-      "text10": "Contributed to the development of a web app in Kotlin, tailored for mobile devices."
-    },
-    "experience2": {
-      "text1": "I implemented a system where users can customize their profiles and make reservations for game lounges.",
-      "text2": "I developed administrative tools that allow for management of game listings on the website, including adding game images and setting up tournaments and events.",
-      "text3": "I contributed to the final web design and handled server maintenance and deployment using AWS.",
-      "text4": "Managed the backend using MeteorJS and MongoDB, ensuring smooth functionality across all user and admin roles."
-    },
-    "education1": {
-      "title": "Universidad del Valle",
-      "subtitle": "Systems Engineering",
-      "description": "During my education, I gained solid knowledge in software development, system architectures, and data analysis. Throughout my career, I learned to apply agile methodologies and work with advanced technologies, which helped me develop technical and problem-solving skills that prepare me to face the challenges of the professional world."
-    },
-    "education2": {
-      "title": "AWS Certified Cloud Practitioner",
-      "subtitle": "Issued by Amazon Web Services Training and Certification",
-      "description": "This AWS certification gave me a strong foundation in cloud services and their applications within the AWS environment. It has enhanced my ability to recognize and work with key AWS services, allowing me to confidently approach AWS-based projects with a better understanding of cloud infrastructure."
-    },
-    "education3": {
-      "title": "DevOps in AWS and project management",
-      "subtitle": "Issued by Coursera",
-      "description": "This certification provided me with a solid understanding of software development, DevOps, and cloud automation. I particularly valued the focus on practical application through case studies and AWS automation. It has equipped me with useful tools for managing projects more efficiently and applying continuous integration and development practices in real-world scenarios."
-    },
-    "aboutText1": "Full Stack web developer with 3 years of professional experience in web applications, ERP, and CRM under the IaaS model, optimizing cloud infrastructure and designing scalable systems for efficient data and user management. Specialized in optimizing workflows and improving business productivity through the use of various technologies.",
-    "aboutText2": "Systems Engineer from Universidad del Valle. A JavaScript specialist passionate about DevOps and mobile development, always seeking new opportunities to innovate and grow professionally."
-  }
+	"content": {
+		"title": "Gengis Hidalgo",
+		"subtitle": "Systems Engineer",
+		"tabProjects": "Projects",
+		"tabExperience": "Experience",
+		"tabEducation": "Education",
+		"tabAbout": "About Me",
+		"viewCode": "View Code",
+		"project1": {
+			"title": "AI Labyrinth",
+			"description": "This project implements three fundamental search algorithms: Depth-First Search (DFS), Breadth-First Search (BFS), and Uniform Cost Search (UCS) to help Pinocchio find Geppetto in a 5x5 matrix. The matrix is populated with obstacles such as cigarettes and foxes, which increase the search cost."
+		},
+		"project2": {
+			"title": "Numerical Methods Exercises",
+			"description": "This project was developed as part of the Numerical Methods course at Universidad del Valle. It implements several common numerical methods for solving equations and statistical analysis."
+		},
+		"project3": {
+			"title": "Beer & Coffee Company - Static Web",
+			"description": "This is a simple personal project to create a static website for a coffee bar business called BCC: Beer & Coffee Company. I used the Materialize CSS framework to take advantage of its ease of use in creating components like a carousel."
+		},
+		"experience0": {
+			"text1": "Interface development and front-end optimizations.",
+			"text2": "Geneuse: AI to optimize the cross-breeding of thoroughbred horses and multiply success probabilities, with micropayments and subscriptions via Stripe. Responsible for building client and admin views, reporting, and email management. International project (Norway and Australia).",
+			"text3": "MentorHispano: Educational platform offering personalized learning and real-time analytics with the support of a chatbot. Responsible for performance improvements and optimizations, reducing load time by 60%. International project (Venezuela).",
+			"text4": "Red Circular Araucanía: Georeferenced dashboard of construction flows and waste to support circular economy decision-making. Responsible for refining material calculations, alerts, and modals in the georeferenced dashboard. International project (Chile).",
+			"text5": "Matty Nutritional Platform: Modular system for managing nutritional plans and tracking health and training habits. Responsible for initial layout and integration using Vercel V0. International project (Spain)."
+		},
+		"experience1": {
+			"text1": "Added advanced search filters to enhance the usability of report searches.",
+			"text2": "Developed modules, such as (protocols), which convert PDF files to HTML with the help of a microservice built in Java.",
+			"text3": "Built functionality to allow users to view up to four reports simultaneously.",
+			"text4": "Implemented functionality for generating PDF reports using PDF.js to improve report readability.",
+			"text5": "Production Deployment: Deployed the system to production environments using AWS.",
+			"text6": "Designed and implemented custom email templates for automated communications.",
+			"text7": "Optimized database tables to improve report loading times and system performance.",
+			"text8": "Updated code dependencies to ensure security and system efficiency.",
+			"text9": "Managed and maintained server infrastructure to guarantee operational continuity.",
+			"text10": "Contributed to the development of a web app in Kotlin, tailored for mobile devices."
+		},
+		"experience2": {
+			"text1": "I implemented a system where users can customize their profiles and make reservations for game lounges.",
+			"text2": "I developed administrative tools that allow for management of game listings on the website, including adding game images and setting up tournaments and events.",
+			"text3": "I contributed to the final web design and handled server maintenance and deployment using AWS.",
+			"text4": "Managed the backend using MeteorJS and MongoDB, ensuring smooth functionality across all user and admin roles."
+		},
+		"experience3": {
+			"text1": "Added pages and new features using custom and third-party plugins (homepage sections, coupon management, events calendar).",
+			"text2": "Managed dependency updates to ensure platform security and performance.",
+			"text3": "Deployed site updates on AWS EC2 and developed automated scripts to back up both the file system and the MySQL database.",
+			"text4": "Configured coupon and events plugins to optimize promotional campaigns and improve user engagement."
+		},
+		"experience4": {
+			"text1": "Designed and visually implemented various platform sections (category pages, location profiles, interactive maps) using templates and custom layouts.",
+			"text2": "Integrated and configured directory, map, and filter plugins to display points of interest and tourist routes.",
+			"text3": "Updated dependencies and themes to ensure compatibility and enhance security.",
+			"text4": "Deployed updates on AWS EC2 and maintained automated backup scripts for files and the MySQL database."
+		},
+		"experience5": {
+			"text1": "Official Edinburg website",
+			"text2": "WordPress Developer (project-based / intermittent) 2021 – 2024",
+			"text3": "Explore Edinburg ETX"
+		},
+		"education1": {
+			"title": "Universidad del Valle",
+			"subtitle": "Systems Engineering",
+			"description": "During my education, I gained solid knowledge in software development, system architectures, and data analysis. Throughout my career, I learned to apply agile methodologies and work with advanced technologies, which helped me develop technical and problem-solving skills that prepare me to face the challenges of the professional world."
+		},
+		"education2": {
+			"title": "AWS Certified Cloud Practitioner",
+			"subtitle": "Issued by Amazon Web Services Training and Certification",
+			"description": "This AWS certification gave me a strong foundation in cloud services and their applications within the AWS environment. It has enhanced my ability to recognize and work with key AWS services, allowing me to confidently approach AWS-based projects with a better understanding of cloud infrastructure."
+		},
+		"education3": {
+			"title": "DevOps in AWS and project management",
+			"subtitle": "Issued by Coursera",
+			"description": "This certification provided me with a solid understanding of software development, DevOps, and cloud automation. I particularly valued the focus on practical application through case studies and AWS automation. It has equipped me with useful tools for managing projects more efficiently and applying continuous integration and development practices in real-world scenarios."
+		},
+		"aboutText1": "Systems Engineer from the University of Valle. Full Stack web developer with 4 years of experience in web applications, ERP, and CRM under the IaaS model—optimizing cloud infrastructure and designing scalable systems for efficient data and user management. Specialized in streamlining workflows and boosting business productivity through the use of diverse technologies.",
+		"aboutText2": "TypeScript specialist passionate about DevOps, mobile development, and artificial intelligence solutions—always seeking new opportunities to innovate and grow professionally."
+	}
 }
