@@ -61,6 +61,14 @@
 			"text2": "Desarrollador WordPress (por proyectos / intermitente) 2021 - 2024",
 			"text3": "Explora Edinburg ETX"
 		},
+		"experience6": {
+			"text1": "local Pub BCC",
+			"text2": "Desarrollador Web",
+			"text3": "Definí la arquitectura front-end y maquetación responsiva para asegurar compatibilidad con dispositivos móviles y escritorio.",
+			"text4": "Implementé el carrusel de menú con control de navegación y estados activos para destacar la categoría seleccionada.",
+			"text5": "Integré contenido dinámico para que el cliente pudiera actualizar precios e imágenes sin necesidad de despliegues.",
+			"text6": "Realicé pruebas de usabilidad y ajusté estilos CSS para mejorar la experiencia de usuario."
+		},
 		"education1": {
 			"title": "Universidad del Valle",
 			"subtitle": "Ingeniería de Sistemas",
@@ -76,7 +84,7 @@
 			"subtitle": "Emitido por Coursera",
 			"description": "Esta certificación me proporcionó una sólida comprensión del desarrollo de software, DevOps y la automatización en la nube. Valoro especialmente el enfoque práctico a través de estudios de caso y la automatización con AWS. Me ha brindado herramientas útiles para gestionar proyectos de manera más eficiente y aplicar prácticas de integración y desarrollo continuo en escenarios reales."
 		},
-		"aboutText1": "Ingeniero en Sistemas de la Universidad del Valle. Desarrollador web Full Stack con 4 años de experiencia en aplicaciones web, ERP y CRM bajo el modelo IaaS, optimizando la infraestructura en la nube y diseñando sistemas escalables para la gestión eficiente de datos y usuarios. Especializado en optimizar flujos de trabajo y mejorar la productividad empresarial mediante el uso de diversas tecnologías.",
+		"aboutText1": "Ingeniero en Sistemas de la Universidad del Valle. Desarrollador web Full Stack con más de 5 años de experiencia en aplicaciones web, ERP y CRM bajo el modelo IaaS, optimizando la infraestructura en la nube y diseñando sistemas escalables para la gestión eficiente de datos y usuarios. Especializado en optimizar flujos de trabajo y mejorar la productividad empresarial mediante el uso de diversas tecnologías.",
 		"aboutText2": "Especialista en TypeScript y apasionado por DevOps, desarrollo móvil y soluciones en inteligencia artificial, siempre en búsqueda de nuevas oportunidades para innovar y crecer profesionalmente."
 	}
 }

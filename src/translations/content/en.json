@@ -61,6 +61,14 @@
 			"text2": "WordPress Developer (project-based / intermittent) 2021 – 2024",
 			"text3": "Explore Edinburg ETX"
 		},
+		"experience6": {
+			"text1": "local Pub BCC",
+			"text2": "Web Developer",
+			"text3": "I defined the front-end architecture and responsive layout to ensure compatibility with mobile and desktop devices.",
+			"text4": "I implemented a menu carousel with navigation controls and active states to highlight the selected category.",
+			"text5": "I integrated dynamic content so the client could update prices and images without requiring deployments.",
+			"text6": "I conducted usability testing and adjusted CSS styles to improve the user experience."
+		},
 		"education1": {
 			"title": "Universidad del Valle",
 			"subtitle": "Systems Engineering",
@@ -76,7 +84,7 @@
 			"subtitle": "Issued by Coursera",
 			"description": "This certification provided me with a solid understanding of software development, DevOps, and cloud automation. I particularly valued the focus on practical application through case studies and AWS automation. It has equipped me with useful tools for managing projects more efficiently and applying continuous integration and development practices in real-world scenarios."
 		},
-		"aboutText1": "Systems Engineer from the University of Valle. Full Stack web developer with 4 years of experience in web applications, ERP, and CRM under the IaaS model—optimizing cloud infrastructure and designing scalable systems for efficient data and user management. Specialized in streamlining workflows and boosting business productivity through the use of diverse technologies.",
+		"aboutText1": "Systems Engineer from the University of Valle. Full Stack Web Developer with over 5 years of experience in web applications, ERP, and CRM under the IaaS model—optimizing cloud infrastructure and designing scalable systems for efficient data and user management. Specialized in streamlining workflows and boosting business productivity through the use of diverse technologies.",
 		"aboutText2": "TypeScript specialist passionate about DevOps, mobile development, and artificial intelligence solutions—always seeking new opportunities to innovate and grow professionally."
 	}
 }

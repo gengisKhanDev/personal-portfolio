@@ -170,6 +170,34 @@ const Experience = () => {
 								</li>
 							</ul>
 						</section>
+						<section className="CV-timeline CV-job relative pl-6 border-l border-[#d4af37] mt-4">
+							<h3 className="CV-timeline-heading mb-4">
+								<span className="CV-timeline-heading-title text-[#d4af37] italic uppercase">
+									{t("content.experience6.text1")}
+								</span>
+								&#8211;
+								<span className="CV-timeline-heading-location text-sm">
+									Tuluá, Valle del Cauca, Colombia · Remote
+								</span>
+								<small className="CV-timeline-heading-duration text-xs text-[#f8f4e3] block">
+									{t("content.experience6.text2")}
+								</small>
+							</h3>
+							<ul className="CV-timeline-details list-disc pl-5">
+								<li className="CV-timeline-details-item mb-2">
+									{t("content.experience6.text3")}
+								</li>
+								<li className="CV-timeline-details-item mb-2">
+									{t("content.experience6.text4")}
+								</li>
+								<li className="CV-timeline-details-item mb-2">
+									{t("content.experience6.text5")}
+								</li>
+								<li className="CV-timeline-details-item mb-2">
+									{t("content.experience6.text6")}
+								</li>
+							</ul>
+						</section>
 					</div>
 				</div>
 			</div>
