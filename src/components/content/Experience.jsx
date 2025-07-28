@@ -109,9 +109,6 @@ const Experience = () => {
 								<li className="CV-timeline-details-item mb-2">
 									{t("content.experience2.text3")}
 								</li>
-								<li className="CV-timeline-details-item mb-2">
-									{t("content.experience2.text4")}
-								</li>
 							</ul>
 						</section>
 						<section className="CV-timeline CV-job relative pl-6 border-l border-[#d4af37] mt-4">

@@ -41,8 +41,7 @@
 		"experience2": {
 			"text1": "Implementé un sistema donde los usuarios pueden personalizar sus perfiles y hacer reservaciones para salas de juegos.",
 			"text2": "Desarrollé herramientas administrativas que permiten gestionar las listas de juegos en el sitio web, incluyendo la adición de imágenes de juegos y la configuración de torneos y eventos.",
-			"text3": "Contribuí al diseño final del sitio web y me encargué del mantenimiento del servidor y el despliegue utilizando AWS.",
-			"text4": "Administré el backend utilizando MeteorJS y MongoDB, garantizando un funcionamiento fluido para todos los roles de usuarios y administradores."
+			"text3": "Contribuí al diseño final del sitio web y me encargué del mantenimiento del servidor y el despliegue utilizando AWS."
 		},
 		"experience3": {
 			"text1": "Añadí páginas y nuevas funcionalidades usando plugins personalizados y de terceros (secciones de la página de inicio, gestión de cupones, calendario de eventos).",
